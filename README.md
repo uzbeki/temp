@@ -47,24 +47,24 @@
 - *コピーしたID名*で`talk_with/app/public/videos/source`の中にフォルダーを作成し、そのフォルダーにユーザーの動画を置く
 
 ## ユーザーの動画設定（csv）
-- 設定ファイルの名前を`videoSettings.csv`にする
-- コピーしたIDを`videoSettings.csv`の`user_id`に設定
-- `videoSettings.csv`の２行目に以下を無ければ追加
+- 設定ファイルの名前を`videoSettingFile.csv`にする
+- コピーしたIDを`videoSettingFile.csv`の`user_id`に設定
+- `videoSettingFile.csv`の２行目に以下を無ければ追加
   ```txt
   original_id, user_id, title, delay, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
-- ソースコードのパスの`docs/`フォルダーに`videoSettings.csv`を保存。（後で管理画面からアップロードできるようになる）
+- ソースコードのパスの`docs/`フォルダーに`videoSettingFile.csv`を保存。（後で管理画面からアップロードできるようになる）
 - ターミナルで`insertData.bat`を実行。
 
 
 
-# videoSettings.csvについて
+# videoSettingFile.csvについて
 ## データーの形（必須）
 1. ２行目に以下であること
   ```txt
   original_id, user_id, title, delay, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
-2. ファイル名が`videoSettings.csv`であること
+2. ファイル名が`videoSettingFile.csv`であること
 3. 患者ID（user_id）にデータベースに登録したユーザーのIDを設定すること
 
 ## 自動初期設定のため（必須ではない）
