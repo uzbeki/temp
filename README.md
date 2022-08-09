@@ -1,3 +1,12 @@
+# Meeting
+コンピューターまたはモバイル アプリで参加できます 
+[会議に参加するにはここをクリックしてください](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmVmMWNiYmYtNGNkMy00ZmU2LWFhOWUtMDdkOGRjOGRhYTJj%40thread.v2/0?context=%7b%22Tid%22%3a%22d2dd91af-a4bb-4842-9ac8-75765fbeaa32%22%2c%22Oid%22%3a%227e476778-c13d-466b-bff0-3a4cc662a415%22%7d) 
+会議 ID: 418 374 968 514 
+パスコード: C7KPqv 
+Teams のダウンロード | [Web に参加](https://www.microsoft.com/microsoft-teams/join-a-meeting)
+詳細情報ヘルプ | 会議のオプション 
+
+
 # PC setup
 - `nodejs` と `npm` のインストール
   [NodeJS version: v16.16.0 LTS, npm version: 8.11.0](https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi)
