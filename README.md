@@ -1,13 +1,4 @@
-# Meeting
-コンピューターまたはモバイル アプリで参加できます 
-[会議に参加するにはここをクリックしてください](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmVmMWNiYmYtNGNkMy00ZmU2LWFhOWUtMDdkOGRjOGRhYTJj%40thread.v2/0?context=%7b%22Tid%22%3a%22d2dd91af-a4bb-4842-9ac8-75765fbeaa32%22%2c%22Oid%22%3a%227e476778-c13d-466b-bff0-3a4cc662a415%22%7d) 
-会議 ID: 418 374 968 514 
-パスコード: C7KPqv 
-Teams のダウンロード | [Web に参加](https://www.microsoft.com/microsoft-teams/join-a-meeting)
-詳細情報ヘルプ | 会議のオプション 
-
-
-# PC setup
+# PCの初期セットアップ（１回のみ）
 - `nodejs` と `npm` のインストール
   [NodeJS version: v16.16.0 LTS, npm version: 8.11.0](https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi)
 - `git` のインストール
@@ -34,7 +25,10 @@ Teams のダウンロード | [Web に参加](https://www.microsoft.com/microsof
     ssh-keygen -t ed25519
     ```
   4. Give public key to `beki@asterone.co.jp` to set up ssh read access to source code
-  
+- FFMPEG セットアップ
+  1. [FFMPEGのインストール](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
+  2. ダウンロードしたファイルを`C:\Program Files\`に解凍する
+  3. `C:\Program Files\ffmpeg\bin\`を`PATH`に追加する
 
 # ソースコードの準備
 - ソースコードを取得する。コマンドで以下を実行。
@@ -67,6 +61,8 @@ Teams のダウンロード | [Web に参加](https://www.microsoft.com/microsof
 
 
 
+
+
 # videoSettingFile.csvについて
 ## データーの形（必須）
 1. ２行目に以下であること
@@ -82,5 +78,14 @@ Teams のダウンロード | [Web に参加](https://www.microsoft.com/microsof
 3. 無言時に再生する動画のタイトルは`silence.mp4`であること、かつ、user_idが設定されていること
 4. 連続無言時に再生する動画のタイトルは`out.mp4`であること、かつ、user_idが設定されていること
 5. SPJ判定スコアが低い時に再生する動画のタイトルは`spjlow.mp4`であること、かつ、user_idが設定されていること
-6.  認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、user_idが設定されていること
-8.  
+6. 認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、user_idが設定されていること
+7.  
+
+# SPJの設定について
+`talk_with/app`の中に`.env.local`ファイルがあります。
+`.env.local`ファイルに以下を設定する：
+```bash
+SPJ_API_KEY = SPJのAPIキー
+SPJ_CATEGORY_ID = カテゴリ別で検索する場合のカテゴリID、検索しない場合は空白
+SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
+```
