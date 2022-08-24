@@ -7,10 +7,7 @@
 - `git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。
   
 - PostgreSQLデーターベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
-  3. `pgAdmin`を開いて、以下のコマンドで`talk_with`データベースの作成
-    ```sql
-    CREATE DATABASE talk_with;
-    ```
+  - インストールが終わったら、`talk_with`データーベースを作成してください。作成方法は[データーベースの作り方](./how_to_install_pg.md/#データーベースの作り方)に従ってください。
 - OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md) に従ってください。
 
 - FFMPEG セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
