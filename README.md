@@ -8,8 +8,8 @@
   
 - PostgreSQLデーターベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
   - インストールが終わったら、`talk_with`データーベースを作成してください。作成方法は[データーベースの作り方](./how_to_install_pg.md/#データーベースの作り方)に従ってください。
-- OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md) に従ってください。
-
+- OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md#OpenSSH) に従ってください。
+  - セットアップが終わりましたら、提供されたSSHキーペアーをセットアップしてください。 => [既に存在するSSHキーペアーのセットアップ](./how_to_setup_openssh.md#既に存在するsshキーペアーのセットアップ) に従ってください。
 - FFMPEG セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
 
 
