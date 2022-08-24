@@ -1,36 +1,22 @@
+初めてTalk Withのon-premise版をパソコンで動くようにするには必要なプログラムをインストールしないといけないです。必要なプログラムのインストールは最初の一回だけ行います。[PCの初期セットアップ（１回のみ）](#pcの初期セットアップ１回のみ)をご覧ください。  
+👆必要なプログラムのインストールが終わったら、Talk WithのソースをPCに入れて動かします。[ソースコードの導入（１回のみ）](#ソースコードの導入（１回のみ）)をご覧ください
+
 # PCの初期セットアップ（１回のみ）
-- `nodejs` と `npm` のインストール
-  [NodeJS version: v16.16.0 LTS, npm version: 8.11.0](https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi)
-- `git` のインストール
-  [Git 2.37.1](https://github.com/git-for-windows/git/releases/download/v2.37.1.windows.1/Git-2.37.1-64-bit.exe)
-- PostgreSQLのセットアップ
-  1. [Postgresql 14.4 インストールリンク](https://sbp.enterprisedb.com/getfile.jsp?fileid=1258118)
-  2. `pgAdmin`を開いて、以下のコマンドで`talk_with`データベースの作成
+- `nodejs` のインストール => [NodeJSのインストール方法](./how_to_install_node.md) に従ってください。
+  
+- `git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。
+  
+- PostgreSQLデーターベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
+  3. `pgAdmin`を開いて、以下のコマンドで`talk_with`データベースの作成
     ```sql
     CREATE DATABASE talk_with;
     ```
-- OpenSSH　セットアップ
-  1. [Install ](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui#install-openssh-for-windows)  
-    `Settings` => `Apps` => `Optional Features` => `OpenSSH Client`をインストール
-  2. Powershellで管理者になって以下のコマンドを実行し、`OpenSSH-Client`を自動起動するように設定する：
-    ```powershell
-    # Set the sshd service to be started automatically
-    Get-Service -Name sshd | Set-Service -StartupType Automatic
+- OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md) に従ってください。
 
-    # Now start the sshd service
-    Start-Service sshd
-    ```
-  3. [新しいSSHキーの作成](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#host-key-generation)  コマンドで以下を実行
-    ```powershell
-    ssh-keygen -t ed25519
-    ```
-  4. Give public key to `beki@asterone.co.jp` to set up ssh read access to source code
-- FFMPEG セットアップ
-  1. [FFMPEGのインストール](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z)
-  2. ダウンロードしたファイルを`C:\Program Files\`に解凍する
-  3. `C:\Program Files\ffmpeg\bin\`を`PATH`に追加する
+- FFMPEG セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
 
-# ソースコードの準備
+
+# ソースコードの導入（１回のみ）
 - ソースコードを取得する。コマンドで以下を実行。
   ```bash
   git clone -b main git@github.com:uzbeki/talk_with.git
