@@ -3,15 +3,13 @@
 
 # PCの初期セットアップ（１回のみ）
 - `nodejs` のインストール => [NodeJSのインストール方法](./how_to_install_node.md) に従ってください。
-  
-- `git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。
-  
+- `git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。  
 - PostgreSQLデーターベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
   - インストールが終わったら、`talk_with`データーベースを作成してください。作成方法は[データーベースの作り方](./how_to_install_pg.md/#データーベースの作り方)に従ってください。
 - OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md#OpenSSH) に従ってください。
   - セットアップが終わりましたら、提供されたSSHキーペアーをセットアップしてください。 => [既に存在するSSHキーペアーのセットアップ](./how_to_setup_openssh.md#既に存在するsshキーペアーのセットアップ) に従ってください。
 - FFMPEG セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
-
+- 上の全部インストール終わったら、PC再起動してください。
 
 # ソースコードの導入（１回のみ）
 - ソースコードを取得する。コマンドで以下を実行。
