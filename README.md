@@ -2,23 +2,27 @@
 👆必要なプログラムのインストールが終わったら、Talk WithのソースをPCに入れて動かします。[ソースコードの導入（１回のみ）](#ソースコードの導入（１回のみ）)をご覧ください
 
 # PCの初期セットアップ（１回のみ）
-- `nodejs` のインストール => [NodeJSのインストール方法](./how_to_install_node.md) に従ってください。
-- `git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。  
-- PostgreSQLデーターベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
+- `NodeJS` のインストール => [NodeJSのインストール方法](./how_to_install_node.md) に従ってください。
+- `Git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。  
+- `PostgreSQL`データーベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
   - インストールが終わったら、`talk_with`データーベースを作成してください。作成方法は[データーベースの作り方](./how_to_install_pg.md/#データーベースの作り方)に従ってください。
-- OpenSSH セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md#OpenSSH) に従ってください。
+- `OpenSSH` セットアップ => [OpenSSHの方法](./how_to_setup_openssh.md#OpenSSH) に従ってください。
   - セットアップが終わりましたら、提供されたSSHキーペアーをセットアップしてください。 => [既に存在するSSHキーペアーのセットアップ](./how_to_setup_openssh.md#既に存在するsshキーペアーのセットアップ) に従ってください。
-- FFMPEG セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
+- `FFMPEG` セットアップ => [ffmpegの方法](./how_to_install_ffmpeg.md) に従ってください。
 - 上の全部インストール終わったら、PC再起動してください。
 
 # ソースコードの導入（１回のみ）
-- ソースコードを取得する。コマンドで以下を実行。
-  ```bash
-  git clone -b main git@github.com:uzbeki/talk_with.git
-  ```
-- `app/`フォルダー内に`.env.local`ファイル作成。中身は `.env.sample` からコピーし、データベースパスワードを入力
-- ターミナルで`setup.bat`を実行
-- `localhost:3000`にアクセスする
+1. `init_talk_with.bat`ファイルを実行してください。
+2. `init_talk_with.bat`のプロセスが一時的に中止し、`notepad`アプリが開かれます。そこに、
+   1. PostgreSQLをインストールした時に設定した`マスターパスワード`
+   2. SPJのAPIキー
+   3. SPJのAPIのURL
+   4. SPJのカテゴリーIDを入力してください。
+3. `notepad`で入力終わったら`Ctrl+S`で保存し、`notepad`を閉じてください。
+4. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。
+5. Windows Security Alert画面が出ます。`Allow Access`というボタンを押してください。  
+  ![Windows Security Alert](images/win_security_alert.png)
+6. 終了したらブラウザでtalk_withアプリが開かれます。
 
 # 新規ユーザー（パートナー・芸能人）の設定
 - `pgAdmin`からユーザー (話す相手・芸能人)の情報をDBに入れて、結果のIDをコピーする。

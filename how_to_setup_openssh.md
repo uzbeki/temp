@@ -37,7 +37,8 @@ OpenSSH は、SSH プロトコルを使用したリモート ログイン用の�
 1. コマンドプロンプトを開いてください。やり方は　[コマンドプロンプトの実行方法](#コマンドプロンプトの実行方法)
 2. コマンドプロンプトで以下のコマンドを打ってください：
    ```bash
-   mkdir %USERPROFILE%\.ssh & explorer %USERPROFILE%\.ssh
+   if not exist %USERPROFILE%\.ssh mkdir %USERPROFILE%\.ssh
+   explorer %USERPROFILE%\.ssh
    ```
 3. SSHキーペアー（`id_ed25519`と`id_ed25519.pub`）をエクスプローラーで開かれたフォルダーに貼り付けてください。
 
