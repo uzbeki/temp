@@ -10,7 +10,25 @@
 
 
 
-# 使い方
+# 使い方 (二つの方法：管理画面又はpgAdmin4アプリ)
+
+[管理画面で設定]
+1. talk-withのアプリケーションを立ち上げます。
+2. ブラウザでlocalhost:3000/adminにアクセスします。
+3. talk-withアプリの画面を縦にしたいとlandscape_modeをチェックせずに更新ボタンを押して下し。
+   ![インストール画面2](./images/landscape_mode/landscape_admin_false.png)
+4. [ landscape_mode : 縦モード ]
+![インストール画面2](./images/landscape_mode/selectPerson(false).png)
+![インストール画面2](./images/landscape_mode/chat(false).png)
+5. talk-withアプリの画面を横にしたいとlandscape_modeをチェックして更新ボタンを押してください。
+   ![インストール画面2](./images/landscape_mode/landscape_admin_true.png)
+6. [ landscape_mode : 横モード ]
+![インストール画面2](./images/landscape_mode/selectPerson(true).png)
+![インストール画面2](./images/landscape_mode/chat(true).png)
+
+  
+
+[pgAdmin4アプリで設定]
 
 1. pgAdmin4のアプリケーションを立ち上げます。
 2. pgadminブラウザでtalk-withにあるproject_settingsテーブルを探します。   
