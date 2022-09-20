@@ -29,3 +29,5 @@
   ![インストール画面2](./images/pattern/play_video_id.png) 
 5. user_idにはキャラクターのIDを記入してください。
   ![インストール画面2](./images/pattern/user_id.png) 
+
+# これから管理画面でも操作できるようにする予定
