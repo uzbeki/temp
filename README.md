@@ -77,8 +77,9 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 
 # 機能の一覧
 [ 仕様書 ]
+* [[ β-2,3 ] silence_limitの設定](./how_to_setup_silence_limit.md)
 * [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count_b10.md)
-* [[ β-29 ] pattern](./how_to_setup_pattern.md)
+* [[ β-29 ] patternの設定](./how_to_setup_pattern.md)
 
 [ 管理者ページ ]
 * [縦横設定（landscape_mode）](./how_to_setup_landscape_mode.md)
