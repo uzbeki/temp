@@ -82,6 +82,6 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 
 [ 管理者ページ ]
 * [縦横設定（landscape_mode）](./how_to_setup_landscape_mode.md)
-* [STOPボタン](./admin_stop_button.md)
+* [管理者画面のSTOPボタン](./admin_stop_button.md)
 
 [ その他 ]

@@ -4,12 +4,11 @@
 
 # 使い方
 1. pgAdmin4のアプリケーションを立ち上げます。
-2. pgadminブラウザでtalk-withにあるvideosテーブルを探します。
+2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。
   ![インストール画面2](./images/hit_words/hit_words_videosTable.png)
-3. videosを右クリックしてView/Edit DataのAllRowsをクリックします。
-  ![インストール画面2](./images/hit_words/hit_words_list.png)
-4. 特定単語を入れる動画を探してhit_wordsの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。
-   ex)
+3. 特定単語を入れる動画を探してhit_wordsの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると変更ができます）  
+
+
    ```javascript 
    { 
       "特定単語":"動画ID",
@@ -18,7 +17,8 @@
       ...
    }
    ```
+  ![インストール画面2](./images/hit_words/hit_words_list.png)
   ![インストール画面2](./images/hit_words/hit_words_data.png)
-5. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
+4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
   ![インストール画面2](./images/hit_words/hit_words_save.png)
-6. これで事前準備は完了したのでtalk-withアプリを立ち上げて確認します。
+5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。
