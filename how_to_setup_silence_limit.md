@@ -12,10 +12,11 @@
 
 # 使い方
 1. pgAdmin4のアプリケーションを立ち上げます。
-2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。
-  ![インストール画面2](./images/hit_words/hit_words_videosTable.png)
+2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。    
+  ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
+  ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
   ![インストール画面2](./images/silence_limit/silence_limit_list.png)
-3. `silence_time_limit`, `silence_video_id`, `silence_count`, `silence_final_video_id`の項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると変更ができます）   
+3. `silence_time_limit`, `silence_video_id`, `silence_count`, `silence_final_video_id`の項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリック又はエンターを押してください。（記入したい欄をダブルクリックすると変更ができます）   
   [ `silence_time_limit` ]     
   ![インストール画面2](./images/silence_limit/silence_time_limit.png)    
   [ `silence_video_id` ]    
@@ -25,7 +26,7 @@
   [ `silence_final_video_id` ]    
   ![インストール画面2](./images/silence_limit/silence_final_video_id.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/silence_limit/save.png)    
+  ![インストール画面2](./images/pg/pgadmin/save_data1.png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。
 
 

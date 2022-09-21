@@ -17,11 +17,12 @@
 
 # 使い方
 
-1. pgAdminを立ち上げてpatternテーブルを探します。
+1. pgAdminを立ち上げてpatternテーブルを探します。   
+( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - pattern )
    ![インストール画面2](./images/pattern/pgAdmin.png)
 2. patternテーブルを開きます。  
 （patternを右クリック- View/Edit Data - All Rowsをクリック）
-   ![インストール画面2](./images/pattern/pgAdmin1.png)
+   ![インストール画面2](./images/pg/pgadmin/open_the_pattern_table.png)
 3. check_idsには事前に決める動画のIDを記入してください。様式は下記に従ってください。  
    様式 ； { 動画のID, 動画のID, 動画のID, ・・・ }
   ![インストール画面2](./images/pattern/check_ids.png)
@@ -29,5 +30,8 @@
   ![インストール画面2](./images/pattern/play_video_id.png) 
 5. user_idにはキャラクターのIDを記入してください。
   ![インストール画面2](./images/pattern/user_id.png) 
+6. 変更が終わったらF6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
+   ![インストール画面2](./images/pg/pgadmin/save_data1.png)
+
 
 # これから管理画面でも操作できるようにする予定
