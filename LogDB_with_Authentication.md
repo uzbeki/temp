@@ -75,7 +75,7 @@ NODE_ENV = production
 USER_NAME = user_name
 USER_PASSWORD = user_password
 ```
-TOKEN_SECRETは24文字以上を使用していただければ問題ありません。NODE_ENVはそのまま使用してください。USERNAMEとPASSWORDはご自身のユーザーテーブルの情報に修正してください。
+TOKEN_SECRETは24文字以上を使用していただければ問題ありません。NODE_ENVはそのまま使用してください。USER_NAMEとUSER_PASSWORDはご自身のユーザーテーブルの情報に修正してください。
 
 3. 動作確認。
 
