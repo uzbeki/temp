@@ -82,8 +82,9 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [[ β-29 ] patternの設定](./how_to_setup_pattern.md)
 
 [ 管理者ページ ]
-* [縦横設定（landscape_mode）](./how_to_setup_landscape_mode.md)
+* [landscape_mode（縦横設定）](./how_to_setup_landscape_mode.md)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
 * [Max_recognition_time](./how_to_setup_max_recognition_time.md)
+* [alternative_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
 
 [ その他 ]

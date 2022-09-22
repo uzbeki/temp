@@ -18,7 +18,7 @@
    ![インストール画面2](./images/conversation/conversation_video_id.png)
    ![インストール画面2](./images/conversation/conversation_count.png)
 6. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/pg/pgadmin/save_data1.png)    
+  ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
 
 7. talk-withのアプリケーションを立ち上げて確認してください。
 

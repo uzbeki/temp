@@ -44,7 +44,7 @@
    * falseの場合  
    ![インストール画面2](./images/landscape_mode/check(false).png)
 6. 変更したら、エンターを押して赤いボックスでチェックされたところを押すか、F6ボタンを押してください。
-   ![インストール画面2](./images/pg/pgadmin/save_data1.png)
+   ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)
 7. これでデータベースのlandscape_nodeの設定は完了です。
 8. talk-withのアプリケーションを立ち上げて確認してください。
 > lnadscape_modeがtrueの場合　　　　

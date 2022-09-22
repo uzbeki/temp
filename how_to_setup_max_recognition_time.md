@@ -17,8 +17,8 @@
 2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。    
 ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )  
   ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
-3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。（記入したい欄をダブルクリックすると変更ができます）
+3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。（記入したい欄をダブルクリックすると変更ができます）　　　　
   ![インストール画面2](./images/max_recognition_time/max_recognition_time_insert_data.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/pg/pgadmin/save_data1.png)    
+  ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。
