@@ -81,12 +81,10 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count_b10.md)
 * [[ β-29 ] patternの設定](./how_to_setup_pattern.md)
 
-[ 管理者ページ ]
-* [landscape_mode（縦横設定）](./how_to_setup_landscape_mode.md)
-* [管理者画面のSTOPボタン](./admin_stop_button.md)
-* [max_recognition_time](./how_to_setup_max_recognition_time.md)
 * [alternative_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
 * [hit_words](./how_to_setup_hit_words.md)
+* [landscape_mode (縦横設定）](./how_to_setup_landscape_mode.md)
+* [max_recognition_time](./how_to_setup_max_recognition_time.md)
+* [tag（回答タグ）](./how_to_setup_tag.md)
+* [管理者画面のSTOPボタン](./admin_stop_button.md)
   
-
-[ その他 ]
