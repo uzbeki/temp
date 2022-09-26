@@ -8,7 +8,7 @@
 # 使い方
 
 1. pgAdmin4のアプリケーションを立ち上げます。
-2. pgadminブラウザでtalk-withにあるproject_settingsテーブルを探します。   
+2. pgadminブラウザでtalk-withにあるuser_settingsテーブルを探します。   
    ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - user_settings )
 3. user_settingsを右クリックしてView/Edit DataのAllRowsをクリックします。
    ![インストール画面2](./images/pg/pgadmin/open_the_user_settings_table.png)
