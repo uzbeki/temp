@@ -79,6 +79,8 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 [ 仕様書 ]
 * [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count_b10.md)
 * [[ β-29 ] pattern](./how_to_setup_pattern.md)
+* [自動認証機能](./LogDB_with_Authentication.md)
+* [Google音声認識](./About_GoogleSpeechToText.md)
 
 [ 管理者ページ ]
 * [縦横設定（landscape_mode）](./how_to_setup_landscape_mode.md)
