@@ -16,7 +16,7 @@
   ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
   ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
   ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_limit_list.png)
-3. `silence_time_limit`, `silence_video_id`, `silence_count`, `silence_final_video_id`の項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリック又はエンターを押してください。（記入したい欄をダブルクリックすると変更ができます）   
+3. `silence_time_limit`, `silence_video_id`, `silence_count`, `silence_final_video_id`の項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリック又はエンターを押してください。（記入したい欄をダブルクリックすると編集ができます）   
   [ `silence_time_limit` ]     
   ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_time_limit.png)    
   [ `silence_video_id` ]    

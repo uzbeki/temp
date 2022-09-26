@@ -37,7 +37,7 @@
    ![インストール画面2](./images/pg/pgadmin/open_the_project_settings_table.png)
 4. 下の画面が見えます。
    ![インストール画面2](./images/pg/functional_description_Img/landscape_mode/project_settings.png)
-5. landscape_modeの項目の下にあるtrueが書いている欄をダブルクリックすると変更が可能になります。
+5. landscape_modeの項目の下にあるtrueが書いている欄をダブルクリックすると編集が可能になります。
    ![インストール画面2](./images/pg/functional_description_Img/landscape_mode/landscape_mode(true).png)
    * trueの場合  
    ![インストール画面2](./images/pg/functional_description_Img/landscape_mode/check(true).png)

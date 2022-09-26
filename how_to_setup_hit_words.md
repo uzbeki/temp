@@ -7,7 +7,7 @@
 2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。   
 ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
   ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
-3. hit_wordsの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると変更ができます）  
+3. hit_wordsの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると編集ができます）  
   ![インストール画面2](./images/pg/functional_description_Img/hit_words/hit_words_list.png)
   ![インストール画面2](./images/pg/functional_description_Img/hit_words/hit_words_data.png)
    ```javascript 

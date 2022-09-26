@@ -21,7 +21,7 @@ ex3) SPJから動画Aと動画B以外の動画が来た場合　→　動画Aと
 2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。   
 ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
   ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
-3. 指定したい動画のalternative_listの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると変更ができます。    
+3. 指定したい動画のalternative_listの項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると編集ができます。    
     ```javascript
     {
             (key)                     (value)

@@ -30,7 +30,7 @@
   ![インストール画面2](./images/pg/functional_description_Img/pattern/play_video_id.png) 
 5. user_idにはキャラクターのIDを記入してください。
   ![インストール画面2](./images/pg/functional_description_Img/pattern/user_id.png) 
-6. 変更が終わったらF6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
+6. 編集が終わったらF6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
    ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)
 
 
