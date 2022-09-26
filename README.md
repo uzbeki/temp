@@ -76,14 +76,16 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 ```
 
 # 機能の一覧
-[ 仕様書 ]
+* [[ β-2,3 ] silence_limitの設定](./how_to_setup_silence_limit.md)
 * [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count_b10.md)
 * [[ β-29 ] pattern](./how_to_setup_pattern.md)
 * [自動認証機能](./LogDB_with_Authentication.md)
 * [Google音声認識](./About_GoogleSpeechToText.md)
 
-[ 管理者ページ ]
-* [縦横設定（landscape_mode）](./how_to_setup_landscape_mode.md)
-* [STOPボタン](./admin_stop_button.md)
-
-[ その他 ]
+* [alternative_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
+* [hit_words](./how_to_setup_hit_words.md)
+* [landscape_mode (縦横設定）](./how_to_setup_landscape_mode.md)
+* [max_recognition_time](./how_to_setup_max_recognition_time.md)
+* [tag（回答タグ）](./how_to_setup_tag.md)
+* [管理者画面のSTOPボタン](./admin_stop_button.md)
+  
