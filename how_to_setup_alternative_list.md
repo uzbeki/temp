@@ -32,7 +32,7 @@ ex3) SPJから動画Aと動画B以外の動画が来た場合　→　動画Aと
       "other"　：　"再生させたい動画ID", // 最後の(key)はotherで書いてください。
     }
     ``` 
-    ![インストール画面2](./images/alternative_list/alternative_list_data.png)
+    ![インストール画面2](./images/pg/functional_description_Img/alternative_list/alternative_list_data.png)
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
   ![インストール画面2](./images/pg/pgadmin/save_data(F6).png)
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

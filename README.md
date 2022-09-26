@@ -86,5 +86,7 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
 * [max_recognition_time](./how_to_setup_max_recognition_time.md)
 * [alternative_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
+* [hit_words](./how_to_setup_hit_words.md)
+  
 
 [ その他 ]

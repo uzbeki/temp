@@ -15,16 +15,16 @@
 2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。    
   ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
   ![インストール画面2](./images/pg/pgadmin/open_the_videos_table.png)
-  ![インストール画面2](./images/silence_limit/silence_limit_list.png)
+  ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_limit_list.png)
 3. `silence_time_limit`, `silence_video_id`, `silence_count`, `silence_final_video_id`の項目に下記のような型式でデータを記入します。記入がし終わったらOKボタンをクリック又はエンターを押してください。（記入したい欄をダブルクリックすると変更ができます）   
   [ `silence_time_limit` ]     
-  ![インストール画面2](./images/silence_limit/silence_time_limit.png)    
+  ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_time_limit.png)    
   [ `silence_video_id` ]    
-  ![インストール画面2](./images/silence_limit/silence_video_id.png)    
+  ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_video_id.png)    
   [ `silence_count` ]    
-  ![インストール画面2](./images/silence_limit/silence_count.png)    
+  ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_count.png)    
   [ `silence_final_video_id` ]    
-  ![インストール画面2](./images/silence_limit/silence_final_video_id.png)    
+  ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_final_video_id.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
   ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

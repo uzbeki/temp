@@ -4,13 +4,13 @@
 
 # 使い方
 1. 管理者ページを開きます。（ localhost:3000/admin ）
-   ![インストール画面2](./images/adminStopBtn/admin.png)
+   ![インストール画面2](./images/pg/functional_description_Img/adminStopBtn/admin.png)
 2. 右上のメニューのSTOPボタンを押します。
-   ![インストール画面2](./images/adminStopBtn/stopBtn.png)
+   ![インストール画面2](./images/pg/functional_description_Img/adminStopBtn/stopBtn.png)
 3. ユーザーが見ている画面Aから画面Bに強制的に移動します。  
    [画面A]
-   ![インストール画面2](./images/adminStopBtn/chat.png)
+   ![インストール画面2](./images/pg/functional_description_Img/adminStopBtn/chat.png)
    [画面B]
-   ![インストール画面2](./images/adminStopBtn/selectPerson.png)
+   ![インストール画面2](./images/pg/functional_description_Img/adminStopBtn/selectPerson.png)
 
 
