@@ -15,7 +15,7 @@
   (*) この時点で ① はもう作動しない。  
   (**) この時点で ② はもう作動しない。  
 
-# 使い方
+# 設定方法
 
 1. pgAdminを立ち上げてpatternテーブルを探します。   
 ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - pattern )
