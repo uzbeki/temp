@@ -89,4 +89,5 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [spj_category](./how_to_setup_spj_category.md)
 * [tag（回答タグ）](./how_to_setup_tag.md)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
+* [チャットボットスコアについて](./About_chatbotScore.md)
   
