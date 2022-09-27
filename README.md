@@ -88,4 +88,5 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [max_recognition_time](./how_to_setup_max_recognition_time.md)
 * [tag（回答タグ）](./how_to_setup_tag.md)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
+* [チャットボットスコアについて](./About_chatbotScore.md)
   
