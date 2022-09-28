@@ -91,4 +91,6 @@ SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
 * [チャットボットスコアについて](./About_chatbotScore.md)
 * [ランダム再生](./how_to_setup_random.md)
+* [まとめモード](./how_to_setup_matome.md)
+* [聞き忘れモード](./how_to_setup_kikiwasure.md)
   
