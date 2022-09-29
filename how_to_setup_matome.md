@@ -43,8 +43,9 @@ CREATE TABLE IF NOT EXISTS summary_keyword (
 * user_id：usersテーブルのid
 * start_id：まとめモードに入るvideoテーブルのid
 * end_video_id：まとめモードを終了するvideosテーブルのid
-* high_score / low_score：このスコア以上のスコアで判定する
-* high_score_video_id / low_score_video_id / other_score_video_id：high_score,low_score以上、それ以外の際に再生されるvideosテーブルのid
+* high_score：このスコア以上のスコアだったらhigh_score_video_idを再生する
+* low_score：このスコア以下のスコアだったらlow_score_video_idを再生する
+* other_score_video_id：high_scoreからlow_scoreの間のスコアで再生されるvideosテーブルのid
 
 ### summary_keywordテーブル
 * id：自動で挿入される
