@@ -21,5 +21,5 @@
    }
    ```
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![特定単語画面4](./images/pg/pgadmin//save_data(F6).png)
+  ![特定単語画面4](./images/pg/pgadmin/save_data(F6).png)
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

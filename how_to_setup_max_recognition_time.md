@@ -17,5 +17,5 @@
 3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。（記入したい欄をダブルクリックすると編集ができます）　　　　
   ![インストール画面2](./images/pg/functional_description_Img/max_recognition_time/max_recognition_time_insert_data.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
+  ![インストール画面2](./images/pg/pgadmin/save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

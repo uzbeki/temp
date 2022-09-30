@@ -75,7 +75,9 @@ SPJ_CATEGORY_ID = カテゴリ別で検索する場合のカテゴリID、検索
 SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 ```
 
-# 機能の一覧
+# 機能の一覧  
+* [管理画面の説明](./admin_page.md)  
+
 * [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
 * [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count.md)
 * [[ β-29 ] pattern](./how_to_setup_pattern.md)
