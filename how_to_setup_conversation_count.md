@@ -18,7 +18,7 @@
    ![対話成立カウンター画面3](./images/pg/functional_description_Img/conversation/conversation_video_id.png)
    ![対話成立カウンター画面4](./images/pg/functional_description_Img/conversation/conversation_count.png)
 6. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。　　　
-  ![対話成立カウンター画面5](./images/pg/pgadmin//save_data(F6).png)    
+  ![対話成立カウンター画面5](./images/pg/pgadmin/save_data(F6).png)    
 
 7. talk-withのアプリケーションを立ち上げて確認してください。
 

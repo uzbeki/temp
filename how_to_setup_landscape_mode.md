@@ -40,7 +40,7 @@
    * falseの場合  
    ![横縦モード画面11](./images/pg/functional_description_Img/landscape_mode/check(false).png)
 6. 変更したら、エンターを押して赤いボックスでチェックされたところを押すか、F6ボタンを押してください。
-   ![横縦モード画面12](./images/pg/pgadmin//save_data(F6).png)
+   ![横縦モード画面12](./images/pg/pgadmin/save_data(F6).png)
 7. これでデータベースのlandscape_nodeの設定は完了です。
 8. talk-withのアプリケーションを立ち上げて確認してください。
 > lnadscape_modeがtrueの場合　　　　

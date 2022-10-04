@@ -18,5 +18,5 @@ spjに送るときは　"【発熱】昨日の夜から熱がありました。"
 3. `tag`の項目に特定単語を記入します。記入がし終わったらOKボタンをクリックしてください。（記入したい欄をダブルクリックすると編集ができます）  
   ![回答タグ画面2](./images/pg/functional_description_Img/tag/tag_list.png)
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![回答タグ画面3](./images/pg/pgadmin//save_data(F6).png)    
+  ![回答タグ画面3](./images/pg/pgadmin/save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

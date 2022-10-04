@@ -9,6 +9,14 @@
 *  `silence_count`　:　無言を何度繰り返すかの回数
 *  `silence_final_video_id`　:　無言の動画IDが設定したカウンターの分だけ再生し終わったら再生させる最後の動画ID  
 
+# 注意点
+* 無言の設定はプロジェクト全体の設定と動画ごとの設定ができます。
+* 優先順位は動画ごとの設定が優先です。  
+  (プロジェクト全体の設定と動画ごとの設定、二つ全部あったら動画ごとの設定が作動)
+* 設定するところ   
+  プロジェクト全体の設定　：　project_settingsのテーブル   
+  動画ごとの設定　：　videosのテーブル
+
 
 # 使い方
 1. pgAdmin4のアプリケーションを立ち上げます。
@@ -26,7 +34,7 @@
   [ `silence_final_video_id` ]    
   ![インストール画面2](./images/pg/functional_description_Img/silence_limit/silence_final_video_id.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
+  ![インストール画面2](./images/pg/pgadmin/save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。
 
 
