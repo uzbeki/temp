@@ -1,7 +1,7 @@
 初めてTalk Withのon-premise版をパソコンで動くようにするには必要なプログラムをインストールしないといけないです。必要なプログラムのインストールは最初の一回だけ行います。[PCの初期セットアップ（１回のみ）](#pcの初期セットアップ１回のみ)をご覧ください。  
 👆必要なプログラムのインストールが終わったら、Talk WithのソースをPCに入れて動かします。[ソースコードの導入（１回のみ）](#ソースコードの導入（１回のみ）)をご覧ください
 
-# PCの初期セットアップ（１回のみ）
+# PCの初期セットアップ（今回は必要がない）
 - `NodeJS` のインストール => [NodeJSのインストール方法](./how_to_install_node.md) に従ってください。
 - `Git` のインストール => [Gitのインストール方法](./how_to_install_git.md) に従ってください。  
 - `PostgreSQL`データーベースのインストール => [PostgreSQLのインストール方法](./how_to_install_pg.md) に従ってください。
@@ -15,32 +15,32 @@
 # ソースコードの導入（１回のみ）
 1. `init_talk_with.bat`ファイルを実行してください。
 2. `init_talk_with.bat`のプロセスが一時的に中止し、`notepad`アプリが開かれます。そこに、
-   1. PostgreSQLをインストールした時に設定した`マスターパスワード`
-   2. SPJのAPIキー
-   3. SPJのAPIのURL
-   4. SPJのカテゴリーIDを入力してください。
-3. `notepad`で入力終わったら`Ctrl+S`で保存し、`notepad`を閉じてください。
-4. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。
-5. Windows Security Alert画面が出ます。`Allow Access`というボタンを押してください。  
+   1. `PGSQL_PASSWORD` => PostgreSQLをインストールした時に設定した`マスターパスワード`
+   2. `SPJ_API_KEY` => SPJのAPIキー
+   3. `SPJ_API_URL` => SPJのAPIのURL
+   4. `SPJ_CATEGORY_ID` => SPJのカテゴリーIDを入力してください（必要なかったらそのまま）。
+3. `notepad`で入力終わったら`Ctrl+S`で保存し、`notepad`を閉じてください。（バッチが次のステップに行きます。行かない場合は`Enter`キーを押してください。）
+4. ファイルエクスプローラーが開かれます。そちらに「鈴木先生」の動画ファイルを全てコピーしてもってきて、エクスプローラー閉じてください。（バッチが次のステップに行きます。行かない場合は`Enter`キーを押してください。）
+5. `notepad`でGoogle CloudのSpeech to Text用のキーを保存するファイルが開かれます。そちらに、Googleのキーを入力し、`Ctrl+S`で保存し、`notepad`を閉じてください。（バッチが次のステップに行きます。行かない場合は`Enter`キーを押してください。）
+6. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。
+7. Windows Security Alert画面が出ます。`Allow Access`というボタンを押してください。  
   ![Windows Security Alert](images/win_security_alert.png)
-6. 終了したらブラウザでtalk_withアプリが開かれます。
+7. バッチが終了するまで、しばらくお待ちしてください。終了したらブラウザでtalk_withアプリが開かれます。
 
-# 新規ユーザー（パートナー・芸能人）の設定
-- `pgAdmin`からユーザー (話す相手・芸能人)の情報をDBに入れて、結果のIDをコピーする。
+# キャラクターの設定（今回は必要がない）
+- `pgAdmin`からユーザー (話す相手・芸能人)の情報をDBに入れて、結果のIDをコピーする。（管理画面ができるまで）
   ```sql
-  INSERT INTO users(name, email, password)
-    VALUES ('鈴木先生', 'suzuki@byouin.co.jp', 'test')
-    RETURNING id;
+  INSERT INTO characters(name, owner_id) VALUES('Suzuki Sensei', (SELECT id FROM users WHERE is_admin=true));
   ```
 ## 動画ファイル
 - *コピーしたID名*で`talk_with/app/public/videos/source`の中にフォルダーを作成し、そのフォルダーにユーザーの動画を置く
 
-## ユーザーの動画設定（csv）
+## キャラクターの動画設定（csv）
 - 設定ファイルの名前を`videoSettingFile.csv`にする
 - コピーしたIDを`videoSettingFile.csv`の`user_id`に設定
 - `videoSettingFile.csv`の２行目に以下を無ければ追加
   ```txt
-  original_id, user_id, title, delay, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
+  original_id, character_id, title, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
 - ソースコードのパスの`docs/`フォルダーに`videoSettingFile.csv`を保存。（後で管理画面からアップロードできるようになる）
 - ターミナルで`insertData.bat`を実行。
@@ -49,22 +49,22 @@
 
 
 
-# videoSettingFile.csvについて
+# videoSettingFile.csvについて（今回は必要がない）
 ## データーの形（必須）
 1. ２行目に以下であること
   ```txt
-  original_id, user_id, title, delay, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
+  original_id, character_id, title, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
 2. ファイル名が`videoSettingFile.csv`であること
-3. 患者ID（user_id）にデータベースに登録したユーザーのIDを設定すること
+3. 患者ID（character_id）にデータベースに登録したユーザーのIDを設定すること
 
 ## 自動初期設定のため（必須ではない）
-1. スタート動画のタイトルは`start.mp4`であること、かつ、user_idが設定されていること
-2. うなずき動画のタイトルは`listen.mp4`であること、かつ、user_idが設定されていること
-3. 無言時に再生する動画のタイトルは`silence.mp4`であること、かつ、user_idが設定されていること
-4. 連続無言時に再生する動画のタイトルは`out.mp4`であること、かつ、user_idが設定されていること
-5. SPJ判定スコアが低い時に再生する動画のタイトルは`spjlow.mp4`であること、かつ、user_idが設定されていること
-6. 認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、user_idが設定されていること
+1. スタート動画のタイトルは`start.mp4`であること、かつ、character_idが設定されていること
+2. うなずき動画のタイトルは`listen.mp4`であること、かつ、character_idが設定されていること
+3. 無言時に再生する動画のタイトルは`silence.mp4`であること、かつ、character_idが設定されていること
+4. 連続無言時に再生する動画のタイトルは`out.mp4`であること、かつ、character_idが設定されていること
+5. SPJ判定スコアが低い時に再生する動画のタイトルは`spjlow.mp4`であること、かつ、character_idが設定されていること
+6. 認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、character_idが設定されていること
 7.  
 
 # SPJの設定について
