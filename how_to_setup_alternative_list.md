@@ -1,6 +1,6 @@
 # alternative_list（動画ID → 変換ID）
 `alternative_list（動画ID → 変換ID）`とは、SPJから来た動画IDが現在再生している動画のalternative_listにあったら、該当動画の代わりに他の動画を再生させる機能です。
-
+> 注意：　IDにはoriginal_idではなく、UUIDをいれてください
 # 例
 * 現在再生している動画のalternative_list
   ```javascript
