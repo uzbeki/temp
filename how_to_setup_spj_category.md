@@ -27,5 +27,5 @@ spj_categoryの設定は `動画ごとの設定` と `Visual Studio Codeアプ�
 3. `spj_category`の項目にカテゴリ番号を記入します。記入がし終わったらエンターを押してください。（記入したい欄をダブルクリックすると編集ができます）  
   ![SPJカテゴリ画面2](./images/pg/functional_description_Img/spj_category/spj_category_list.png)
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![SPJカテゴリ画面3](./images/pg/pgadmin//save_data(F6).png)    
+  ![SPJカテゴリ画面3](./images/pg/pgadmin/save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

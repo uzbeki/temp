@@ -2,6 +2,14 @@
 
 `max_recognition_time`とは、マイクがONになったとき音声認識する時間を測って事前に設定した時間になったら認識した音声を強制的にSPJへ送る機能です。
 
+# 注意点
+* max_recognition_timeの設定はプロジェクト全体の設定と動画ごとの設定ができます。
+* 優先順位は動画ごとの設定が優先です。  
+  (プロジェクト全体の設定と動画ごとの設定、二つ全部あったら動画ごとの設定が作動)
+* 設定するところ   
+  プロジェクト全体の設定　：　project_settingsのテーブル   
+  動画ごとの設定　：　videosのテーブル
+
 # 設定方法 (プロジェクト全体の設定及び動画別の設定)
 
 ### [ プロジェクト全体の設定 ]
@@ -17,5 +25,5 @@
 3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。（記入したい欄をダブルクリックすると編集ができます）　　　　
   ![インストール画面2](./images/pg/functional_description_Img/max_recognition_time/max_recognition_time_insert_data.png)    
 4. F6ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
-  ![インストール画面2](./images/pg/pgadmin//save_data(F6).png)    
+  ![インストール画面2](./images/pg/pgadmin/save_data(F6).png)    
 5. これで事前準備は完了しましたのでtalk-withアプリを立ち上げて確認します。

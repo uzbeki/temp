@@ -76,19 +76,27 @@ SPJ_CATEGORY_ID = カテゴリ別で検索する場合のカテゴリID、検索
 SPJ_API_URL = SPJのAPIのURL(最後の部分は/retrieve?で終わること)
 ```
 
-# 機能の一覧
-* [[ β-2,3 ] 無言の設定](./how_to_setup_silence_limit.md)
-* [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count_b10.md)
+# 機能の一覧  
+* [管理画面の説明](./admin_page.md)  
+
+* [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
+* [[ β-10 ] conversation_countの設定](./how_to_setup_conversation_count.md)
 * [[ β-29 ] pattern](./how_to_setup_pattern.md)
 * [自動認証機能](./LogDB_with_Authentication.md)
-* [Google音声認識](./About_GoogleSpeechToText.md)
-
-* [alternative_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
+* [replacement_list 動画ID/変換ID](./how_to_setup_alternative_list.md)
+* [fullscreen](./how_to_setup_fullscreen.md)
+* [google音声認識](./About_GoogleSpeechToText.md)
+* [hide_cursor](./how_to_setup_hide_cursor.md)
 * [hit_words](./how_to_setup_hit_words.md)
 * [landscape_mode (縦横設定）](./how_to_setup_landscape_mode.md)
 * [max_recognition_time](./how_to_setup_max_recognition_time.md)
+* [show_speech_recognition_result](./how_to_setup_show_speech_recognition_result.md)
 * [spj_category](./how_to_setup_spj_category.md)
 * [tag（回答タグ）](./how_to_setup_tag.md)
 * [管理者画面のSTOPボタン](./admin_stop_button.md)
-* [チャットボットスコアについて](./About_chatbotScore.md)
-  
+* [チャットボットスコア判定について](./About_chatbotScore.md)
+* [ランダム再生](./how_to_setup_random.md)
+* [まとめモード](./how_to_setup_matome.md)
+* [聞き忘れモード](./how_to_setup_kikiwasure.md)
+* [強制再生](./how_to_setup_force_video.md)
+* [on-promiseモード](./how_to_switch_on-promise_mode.md)
