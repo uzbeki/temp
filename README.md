@@ -34,45 +34,49 @@
   ![Windows Security Alert](images/win_security_alert.png)
 2. バッチが終了するまで、しばらくお待ちしてください。終了したらブラウザでtalk_withアプリが開かれます。
 
-# キャラクター追加方法（今回は必要がない）
-- `pgAdmin`からユーザー (話す相手・芸能人)の情報をDBに入れて、結果のIDをコピーする。（管理画面ができるまで）
+# キャラクターの追加方法（今回は必要がない）
+- 以下のコマンドをコピーし、`pgAdmin`でキャラクターを作成してください。`キャラクター名`の部分を追加したいキャラクター名に変更してください。
+> pgadminの使い方については「[SQLコマンドで操作方法](./how_to_install_pg.md#SQLコマンドで操作方法)」に従ってください。
   ```sql
-  INSERT INTO characters(name, owner_id) VALUES('Suzuki Sensei', (SELECT id FROM users WHERE is_admin=true));
+  INSERT INTO characters(name, owner_id) VALUES('キャラクター名', (SELECT id FROM users WHERE is_admin=true)) RETURNING ID;
   ```
+- 実行したら、キャラクターのIDが以下のように返されます：![キャラクター追加の結果例](./images/add_character/add_character_result.png)
+- そのIDをメモって置いてください。
+
 ## 動画ファイル
-- *コピーしたID名*で`talk_with/app/public/videos/source`の中にフォルダーを作成し、そのフォルダーにユーザーの動画を置く
+- *メモしたID*で`talk_with/app/public/videos/source`の中にフォルダーを作成し、そのフォルダーにキャラクターの動画を入れてください。![キャラクター動画ファイルのフォルダー](./images/add_character/character_video_folder.png)
 
 ## キャラクターの動画設定（csv）
-- 設定ファイルの名前を`videoSettingFile.csv`にする
-- コピーしたIDを`videoSettingFile.csv`の`user_id`に設定
-- `videoSettingFile.csv`の２行目に以下を無ければ追加
+- 設定ファイルの名前を`videoSettingFile.csv`にしてください。
+- メモしたIDを`videoSettingFile.csv`の`character_id`に設定してください。
+- `videoSettingFile.csv`の２行目に以下を無ければ追加してください。
   ```txt
   original_id, character_id, title, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
-- ソースコードのパスの`docs/`フォルダーに`videoSettingFile.csv`を保存。（後で管理画面からアップロードできるようになる）
+- ソースコードのパスの `C:/talk_with/docs/`フォルダーに`videoSettingFile.csv`を保存。（後で管理画面からアップロードできるようになる）
 - ターミナルで`insertData.bat`を実行。
+> バッチは `C:\talk_with\`に存在します。
 
 
 
-
-
-# videoSettingFile.csvについて（今回は必要がない）
+# videoSettingFile.csvについて
 ## データーの形（必須）
 1. ２行目に以下であること
   ```txt
   original_id, character_id, title, action, loop_count, original_next_id, mic_on, play_now, mic_on_millisecond, question, comment
   ```
 2. ファイル名が`videoSettingFile.csv`であること
-3. 患者ID（character_id）にデータベースに登録したユーザーのIDを設定すること
-
-## 自動初期設定のため（必須ではない）
+3. キャラクターID（character_id）にデータベースに登録したキャラクターのIDを設定すること
+4. フラグ系の項目（`mic_on, play_now, question`）などの値としては、`true`か`false`か`TRUE`か`FALSE`のいずれを入れてください。
+## 動画設定について
+以下のように動画名と設定ファイルを合わせれば、自動でデータベースにキャラクターのスタート動画、うなずき動画、無音時の動画、認識できないときの動画などが登録される。
 1. スタート動画のタイトルは`start.mp4`であること、かつ、character_idが設定されていること
 2. うなずき動画のタイトルは`listen.mp4`であること、かつ、character_idが設定されていること
-3. 無言時に再生する動画のタイトルは`silence.mp4`であること、かつ、character_idが設定されていること
-4. 連続無言時に再生する動画のタイトルは`out.mp4`であること、かつ、character_idが設定されていること
-5. SPJ判定スコアが低い時に再生する動画のタイトルは`spjlow.mp4`であること、かつ、character_idが設定されていること
-6. 認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、character_idが設定されていること
-7.  
+3. 認識できない音の動画のタイトルは`unrecognized.mp4`であること、かつ、character_idが設定されていること
+4. 無言時に再生する動画のタイトルは`silence.mp4`であること、かつ、character_idが設定されていること
+5. 連続無言時に再生する動画のタイトルは`out.mp4`であること、かつ、character_idが設定されていること
+6. SPJ判定スコアが低い時に再生する動画のタイトルは`spjlow.mp4`であること、かつ、character_idが設定されていること
+
 
 # SPJの設定について
 `talk_with/app`の中に`.env.local`ファイルがあります。
