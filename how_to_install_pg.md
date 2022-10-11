@@ -82,3 +82,11 @@ pgAdmin は、世界で最も先進的なオープン ソース データベー�
 4. 削除をデーターベースで反映させるため、データーベース保存アイコンをクリックしてください。  
    ![保存アイコン](images/pg/pgadmin/delete_data3.png)
    > 注意点： このアイコンを押さないと、選択列はDBから削除されないです。
+
+
+
+## SQLコマンドで操作方法
+1. pgadminの左メニューの`talk_with`DB名を右クリックして、`Query Tool`を選択してください。  
+   ![Query Tool](./images/pg/pgadmin/querytool.png)
+2. 以下のように`Query Editor`にコマンドを入れ、実行ボタンをクリックしてください。
+   ![コマンド入力・実行の例](./images/pg/pgadmin/sqlCommand.png)
