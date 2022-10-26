@@ -1,7 +1,19 @@
 # 強制再生とは
 `強制再生`とは、ユーザーが何を言っても事前に指定した動画を強制的に再生させる機能です。
 
+video_2が再生途中、videoDataイベントで再生のコマンドが来た：
+force_video.play_nowがtrueだったら、すぐに再生。反対だったら、再生終わってから切り替える。
+
+待ち受け動画の時にSPJからIDが来たら、無視で強制再生動画を再生する。
+
 # 設定方法
+直前のforce_video_idに設定する。
+```
+質問動画 => 待ち受け動画 => 強制再生動画
+video_1 => video_2 => video_2.force_video
+```
+
+# DB設定方法
 1. pgAdmin4のアプリケーションを立ち上げます。
 2. pgadminブラウザでtalk-withにあるvideosテーブルを探して右クリックしてView/Edit DataのAllRowsをクリックします。    
   ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - videos )
