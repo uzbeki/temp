@@ -115,7 +115,7 @@
 |destination|VARCHAR(50)|接続先|
 |character_id|SERIAL|charactersテーブルのid|
 |time|TIMESTAMP|ログの時間|
-|action|VARCHAR(50)||
+|action|VARCHAR(50)|socket通信の有無|
 |payload|TEXT|ログの内容|
 
 # error_logsテーブル
