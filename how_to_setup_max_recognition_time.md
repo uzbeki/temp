@@ -1,6 +1,6 @@
 # max_recognition_timeとは
 
-`max_recognition_time`とは、マイクがONになったとき音声認識する時間を測って事前に設定した時間になったら認識した音声を強制的にSPJへ送る機能です。
+`max_recognition_time`とは、音声認識が確定されなかった場合、強制的に時間を測ってSPJへ送る機能です。
 
 # 注意点
 * max_recognition_timeの設定はプロジェクト全体の設定と動画ごとの設定ができます。

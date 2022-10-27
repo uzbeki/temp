@@ -24,8 +24,8 @@
 |id|UUID|主キー。自動で生成される。|
 |character_id|SERIAL|charactersテーブルのid|
 |path|VARCAHAR(255)|動画があるディレクトリのパス|
-|original_id|INTEGER|
-|original_next_id|INTEGER[]|
+|original_id|INTEGER|α版で使っている動画ID|
+|original_next_id|INTEGER[]|α版で使っている動画IDのnext_id|
 |title|VARCHAR(255)|拡張子無しの動画のファイル名|
 |action|VARCHAR(10)| jump, loop, end, skip|
 |loop_count|SMALLINT|何回ループするか|
@@ -43,8 +43,8 @@
 |silence_final_video_id|UUID[]|videosテーブルのid。無言回数を超えた場合に流す動画。|
 |tag|VARCHAR(255)|SPJにタグを付けて送信する|
 |spj_category|SMALLINT|SPJのカテゴリー|
-|hit_words|JSON||
-|replacement_list|JSON|
+|hit_words|JSON|認識された音声に特定単語がある場合、事前に用意した動画を流すための特定単語|
+|replacement_list|JSON|spjから来た動画のidを他の動画のidに変換する|
 |max_recognition_time|SMALLINT|設定した時間になったら認識した音声を強制的にSPJへ送る|
 
 # character_settingテーブル
@@ -59,10 +59,9 @@
 |silence_count|SMALLINT|無言回数|
 |silence_final_video_id|UUID[]|videosテーブルのid。無言回数を超えた場合に流す動画。|
 |silence_enabled|BOOLEAN|silence機能を有効にするか|
-|chatbot_score|FLOAT(2)|
+|chatbot_score|FLOAT(2)|0~1。|
 |chatbot_score_video_id|UUID|videosテーブルのid|  
-|conversation_video_id|UUID|
-|conversation_count|SMALLINT|
+
 
 # project_settingsテーブル
 |カラム|型|説明|
@@ -70,10 +69,18 @@
 |id|smallserial|主キー|
 |use_web_speech_api|BOOLEAN|ブラウザのSpeech-to-Textを使うか|
 |landscape_mode|BOOLEAN|ディスプレイが横型で使用するか|
-|max_recognition_time|INTEGER|
+|max_recognition_time|INTEGER|音声認識が確定されない場合、強制的に送るための時間設定|
 |show_speech_recognition_result|BOOLEAN|音声認識の結果を画面に表示するか|
 |hide_cursor|BOOLEAN|カーソルを隠すか|
 |standby_video_id|UUID|videosテーブルのid。待機中に流す動画。|
+
+# conversationsテーブル
+|カラム|型|説明|
+|---|---|---|
+|character_id|INTEGER|charactersテーブルのid|
+|start_count_video_id|UUID|対話成立のカウンターを始める動画|
+|count|SMALLSERIAL|対話成立のカウンターする数|
+|play_video_id|UUID|対話成立のカウンターが終わった場合流す動画|
 
 # chatbot_scoresテーブル
 |カラム|型|説明|
@@ -86,8 +93,8 @@
 # slotsテーブル
 |カラム|型|説明|
 |---|---|---|
-|play_video_id|UUID|主キー。videosテーブルのid。|
-|check_ids|UUID[]||
+|play_video_id|UUID|check_idsが全部再生された場合流す動画|
+|check_ids|UUID[]|チェックしたい動画のid|
 |character_id|SERIAL|charactersテーブルのid。|
 
 # play_logsテーブル
@@ -163,12 +170,3 @@
 
 # blockテーブル
 未定
-
-# conversationsテーブル
-|カラム|型|説明|
-|---|---|---|
-|id|INTEGER|主キー|
-|character_id|SERIAL|charactersテーブルのid|
-|start_count_video_id|UUID|スタート動画。videosテーブルのid|
-|count|SMALLSERIAL|対話成立の回数|
-|play_video_id|UUID|対話がcount成功した場合に流す動画。videosテーブルのid|
