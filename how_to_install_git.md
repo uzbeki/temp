@@ -14,7 +14,7 @@ Git は習得が容易で、非常に高速なパフォーマンスを備えた�
    ![インストール画面2](./images/git/ins2.png)
 5. `Next(次へ)`を押し続けてください。
    ![インストール画面2](./images/git/002.png)
-6. Choosing the default editor画面も画像のままで、`Next(次へ)`を押してください。
+6. Choosing the default editor画面も画像のままで、`Next(次へ)`を押してください。こちらで `Visual Studio Code` を選択する必要がありません。デフォルトで選択されているものでそのまま次へ進んでください。
    ![インストール画面3](./images/git/ins3.png)
 7. Adjusting the name 画面もそのままで、`Next(次へ)`を押してください。
    ![インストール画面4](./images/git/ins4.png)
