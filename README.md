@@ -20,7 +20,8 @@
 2. `init_talk_with.bat`のプロセスが一時的に中止し、`notepad`アプリが開かれます。そこに、
    1. `PGSQL_PASSWORD` => PostgreSQLをインストールした時に設定した`マスターパスワード`
 3. `notepad`で入力終わったら`Ctrl+S`で保存し、`notepad`を閉じてください。（バッチが次のステップに行きます。行かない場合は`Enter`キーを押してください。）
-4. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。
+4. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。  
+    (終わったらブラウザが自動で開かれますので、そのページでキャラクターを追加してください。)
 > キャラクターを追加しないと動かないため、管理画面から [キャラクターの追加方法](./how_to_add_character.md) に従ってください。
 ## Step 2 - Windows Firewallの許可（もし出たら）
 1. Windows Security Alert画面が出ます。`Allow Access`というボタンを押してください。  
