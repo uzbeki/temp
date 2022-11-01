@@ -19,6 +19,15 @@
 
 ## STEP 4 - 確認事項
 待機動画が設定されないと、メイン画面は動きませんので、 [standby_video_id](how_to_setup_stanby_video_id.md)の設定されているかを確認してください。
+
+## STEP 5 - 起動方法
+> ⚠ 必ず STEP 4まで完了した上で行ってください。
+1. STEP4まで終わったら、C:\talk_withにある`stop`アイコンをクリックしてください。すべてのブラウザ及びターミナルが自動に閉じられます。  
+![アプリ起動の方法](./images/add_character/stop_bat.jpg)
+2. 全部閉じられたら、C:\talk_withにある`start`アイコンをクリックしてください。  
+![アプリ起動の方法](./images/add_character/start_bat.jpg)
+3. アプリが立ち上げられたらユーザー画面と管理画面が開かれます。
+
 # キャラクターの削除方法
 1. 管理画面の [キャラー管理](http://localhost:3000/admin/characters)ページに移動しいてください。
 2. `キャラクターの一覧`の`削除`ボタンをクリックしてください。  
