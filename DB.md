@@ -63,7 +63,7 @@
 |chatbot_score_video_id|UUID|videosテーブルのid|  
 |spj_url|VARCHAR(100)|SPJへのアクセス用のURL。後ろに `/retrieve?` は不要|
 |spj_api_key|VARCHAR(100)|SPJへのアクセス用APIキー|
-|google_key|JSON|Googleへのアクセス用のAPIキー。JSON式|
+|google_key|JSON|Googleへのアクセス用のAPIキー。JSON式 (まだ機能しません。)|
 
 
 # project_settingsテーブル

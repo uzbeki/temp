@@ -8,7 +8,7 @@
 
 ## キャラクター設定  
   * 項目の機能は[データベース構成](./DB.md)を参考にしてください。
-  * `[必須] spj_url, spj_api_key, google_keyは記入`してください。
+  * `[必須] spj_url, spj_api_key, google_keyは記入`してください。（google_keyはまだ機能しません。）
   * 項目別の記入が終わったら、表の下にある"設定変更"保存されます。  
   ![キャラクター設定２](./images/add_character/character_settings/character_settings.jpg)
 
