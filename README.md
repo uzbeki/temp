@@ -25,7 +25,7 @@
     2. 管理画面：プロジェクト設定
     2. メイン画面（待機動画がない為、何もない画面）
 > * キャラクターを追加しないと動かないため、管理画面から [キャラクターの追加方法](./how_to_add_character.md) に従ってください。　　
-> * キャラクターテーブルの更新は管理画面から [character_settingsテーブルの更新方法](./how_to_add_character.md) に従ってください。
+> * キャラクターテーブルの更新は管理画面から [character_settingsテーブルの更新方法](./how_to_setup_character_admin_page.md) に従ってください。
 ## Step 2 - Windows Firewallの許可（もし出たら）
 1. Windows Security Alert画面が出ます。`Allow Access`というボタンを押してください。  
   ![Windows Security Alert](images/win_security_alert.png)
