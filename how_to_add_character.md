@@ -22,7 +22,7 @@
 
 ## STEP 5 - 起動方法
 > ⚠ 必ず STEP 4まで完了した上で行ってください。
-1. STEP4まで終わったら、C:\talk_withにある`stop`アイコンをクリックしてください。すべてのブラウザ及びターミナルが自動に閉じられます。  
+1. STEP4まで終わったら、C:\talk_withにある`stop`アイコンをクリックしてください。ブラウザ及びターミナル `⚠すべて` が自動に閉じられます。  
 ![アプリ起動の方法](./images/add_character/stop_bat.jpg)
 2. 全部閉じられたら、C:\talk_withにある`start`アイコンをクリックしてください。  
 ![アプリ起動の方法](./images/add_character/start_bat.jpg)
