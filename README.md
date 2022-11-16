@@ -68,6 +68,7 @@
 * [聞き忘れモード](./how_to_setup_kikiwasure.md)
 * [強制再生](./how_to_setup_force_video.md)
 * [on-premiseモード](./how_to_switch_on-premise_mode.md)
+* [クラウド版（開発用）](./cloud_dev.md)
 
 
 # 自動再生許可の設定
