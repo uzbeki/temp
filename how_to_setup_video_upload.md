@@ -15,3 +15,5 @@
   ![アップデート４](./images/add_character/videoUpload/videoData2.png)  
 ４．記入が終わったら、下にある設定完了ボタンを押してください。下のパップアップが出てきたら動画アップロードは終わりです。  
   ![アップデート５](./images/add_character/videoUpload/uploaded.png)  
+
+*[動画の設定修正・変更・削除](./how_to_setup_video_settings.md)したい場合はこちらを参考にしてください。
