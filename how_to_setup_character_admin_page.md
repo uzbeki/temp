@@ -33,3 +33,4 @@
 [動画のアップロード](./how_to_setup_video_upload.md)を参考にしてください。
 
 ## 動画の設定修正・変更・削除
+[動画の設定修正・変更・削除](./how_to_setup_video_settings.md)を参考にしてください。
