@@ -7,7 +7,7 @@
 http 通信をしているので以下が必要である。
 
 1. Chrome のアドレスバーに次の URL を入力し設定画面に行く。`chrome://flags/#unsafely-treat-insecure-origin-as-secure`
-2. `Insecure origins treated as secure`の欄にサーバーの IP アドレス(http://43.128.227.10)を入力する。
+2. `Insecure origins treated as secure`の欄にサーバーの IP アドレス(http://43.133.178.37)を入力する。
    サーバーの IP アドレスは、サーバーを再起動する度に変わる。
 3. Enabled -> Relaunch を押す。
 4. アプリ画面を再起動し、マイクを許可のポップアップで許可する。
@@ -15,7 +15,7 @@ http 通信をしているので以下が必要である。
 # Chrome の設定で自動再生を許可する
 
 [README.md を参照](README.md)
-音声の再生を許可するサイト：http://43.128.227.10
+音声の再生を許可するサイト：http://43.133.178.37
 
 # 注意
 
