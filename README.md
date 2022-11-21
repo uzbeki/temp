@@ -48,15 +48,14 @@
 
 # 機能の一覧
 
+- [管理画面について](./admin_page.md)
 - [管理画面：キャラクター追加](./how_to_add_character.md)
 - [DB 構成](./DB.md)
-- [管理画面の説明](./admin_page.md)
 - [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
 - [[ β-10 ] conversation_count の設定](./how_to_setup_conversation_count.md)
 - [[ β-29 ] pattern](./how_to_setup_pattern.md)
 - [自動認証機能](./LogDB_with_Authentication.md)
 - [replacement_list 動画 ID/変換 ID](./how_to_setup_alternative_list.md)
-- [fullscreen](./how_to_setup_fullscreen.md)
 - [google 音声認識](./About_GoogleSpeechToText.md)
 - [hide_cursor](./how_to_setup_hide_cursor.md)
 - [hit_words](./how_to_setup_hit_words.md)
@@ -65,7 +64,6 @@
 - [show_speech_recognition_result](./how_to_setup_show_speech_recognition_result.md)
 - [spj_category](./how_to_setup_spj_category.md)
 - [tag（回答タグ）](./how_to_setup_tag.md)
-- [管理者画面の STOP ボタン](./admin_stop_button.md)
 - [チャットボットスコア判定について](./About_chatbotScore.md)
 - [ランダム再生](./how_to_setup_random.md)
 - [まとめモード](./how_to_setup_matome.md)
@@ -74,6 +72,8 @@
 - [on-premise モード](./how_to_switch_on-premise_mode.md)
 - [クラウド版（開発用）](./cloud_dev.md)
 - [ブロック機能](./tutorial_block_function.md)
+<!-- - [fullscreen](./how_to_setup_fullscreen.md) -->
+<!-- - [管理者画面の STOP ボタン](./admin_stop_button.md) -->
 
 # 自動再生許可の設定
 
