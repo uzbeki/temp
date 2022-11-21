@@ -74,6 +74,8 @@
 - [ブロック機能](./tutorial_block_function.md)
 <!-- - [fullscreen](./how_to_setup_fullscreen.md) -->
 <!-- - [管理者画面の STOP ボタン](./admin_stop_button.md) -->
+- [valid_response](./how_to_setup_valid_response.md)
+- [play_again](./how_to_setup_play_again.md)
 
 # 自動再生許可の設定
 
