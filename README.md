@@ -25,8 +25,8 @@
    1. `PGSQL_PASSWORD` => PostgreSQL をインストールした時に設定した`マスターパスワード`
 3. `notepad`で入力終わったら`Ctrl+S`で保存し、`notepad`を閉じてください。（バッチが次のステップに行きます。行かない場合は`Enter`キーを押してください。）
 4. `init_talk_with.bat`のプロセスが再開されます。終了までお待ちください。終了したら、３つの画面が出てきます： 1. 管理画面：キャラー管理 2. 管理画面：プロジェクト設定 2. メイン画面（待機動画がない為、何もない画面）
-   > - キャラクターを追加しないと動かないため、管理画面から [キャラクターの追加方法](./how_to_add_character.md) に従ってください。
-   > - キャラクターテーブルの更新は管理画面から [character_settings テーブルの更新方法](./how_to_setup_character_admin_page.md) に従ってください。
+   > - キャラクターを追加しないと動かないため、管理画面から [キャラクターの追加方法](./page/admin_page/character_settings/how_to_add_character.md) に従ってください。
+   > - キャラクターテーブルの更新は管理画面から [character_settings テーブルの更新方法](./page/admin_page/character_settings/how_to_setup_character_admin_page.md) に従ってください。
 
 ## Step 2 - Windows Firewall の許可（もし出たら）
 
@@ -48,8 +48,8 @@
 
 # 機能の一覧
 
-- [管理画面について](./admin_page.md)
-- [管理画面：キャラクター追加](./how_to_add_character.md)
+- [管理画面について](./page/admin_page/admin_page.md)
+- [管理画面：キャラクター追加](./page/admin_page/character_settings/how_to_add_character.md)
 - [DB 構成](./DB.md)
 - [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
 - [[ β-10 ] conversation_count の設定](./how_to_setup_conversation_count.md)
