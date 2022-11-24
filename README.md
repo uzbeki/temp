@@ -79,6 +79,7 @@
 - [聞き動画の連番再生について](./page/block/how_to_setup_listen_videos.md)
 - [invalid_response](./page/block/how_to_setup_invalid_response.md)
 
+- [spj_empty_video](./how_to_setup_spj_empty_video.md)
 # 自動再生許可の設定
 
 ブラウザはセキュリティー上で、動画の自動再生するにはユーザーが先に操作しないと再生しないです。自動再生がうまくいくためには、`talk with`が動いているドメインの許可を入れないといけないです。いかに従ってください。
