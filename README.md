@@ -77,6 +77,7 @@
 - [valid_response](./page/block/how_to_setup_valid_response.md)
 - [play_again](./page/block/how_to_setup_play_again.md)
 - [聞き動画の連番再生について](./page/block/how_to_setup_listen_videos.md)
+- [invalid_response](./page/block/how_to_setup_invalid_response.md)
 
 # 自動再生許可の設定
 
