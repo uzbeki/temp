@@ -49,6 +49,7 @@
 # 機能の一覧
 
 - [管理画面について](./page/admin_page/admin_page.md)
+- [管理画面：スタートブロック仕様・設定](./page/admin_page/character_settings/how_to_setup_character_start_buttons.md)
 - [管理画面：キャラクター追加](./page/admin_page/character_settings/how_to_add_character.md)
 - [DB 構成](./DB.md)
 - [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
