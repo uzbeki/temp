@@ -172,4 +172,28 @@
 |play_video_id|UUID|check_played_idで再生していない場合に再生するvideosテーブルのid|
 
 # blockテーブル
-未定
+| カラム                  | 説明                                                          |
+| ----------------------- | ------------------------------------------------------------- |
+| title                   | ブロックの説明文                                              |
+| trigger_video        　　| ブロックの初めに流れる動画                                    |
+| listen_video         　　| 聞き町動画                                                      |
+| valid_responses         | 飛ばしたいブロックの trigger_video                            |
+| tag                     |                                                               |
+| hit_words               | 特定のキーワードを含んでいたら、動画を流す                    |
+| invalid_response_video  | 関係ないことを話したら流す動画                                |
+| invalid_max_count       | 指定した番号を超えたらブロックから出る                        |
+| skip_id                 | spj から返ってきた特定の動画 ID を無視する                    |
+| play_again              | true:同じブロックに入る、false:同じブロックに入らない         |
+| play_final_video        | ブロックに入らない時に流す動画                                |
+| max_recognition_time    | 音声認識時間                                                  |
+| replacement_list        | 特定の動画の変換 ID を流す                                    |
+| nod_video               | うなずき動画                                                  |
+| spj_category            |                                                               |
+| spj_empty_video         | spj が何も返さなかったときに流す動画                          |
+| chatbot_score_end       | true だったら、シナリオを出る、false だったら、聞く動画に戻る |
+| chatbot_score_end_video | スコアが低かったら違うブロックの動画を流す                    |
+| listen_video_number     | 聞く動画の何番目を流すかの番号                                |
+| silence_time_limit      | 無言時間                                                      |
+| silence_video           | 無言動画                                                      |
+| silence_count           | 無言動画カウント                                              |
+| silence_final_video     | 無言動画カウントを超えたらシナリオを出るときに流す動画        |
