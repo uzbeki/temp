@@ -18,7 +18,7 @@
 終了したら、サーバーを再起動をしてください。（stop.batで停止、start.batでスタート）
 
 ## STEP 4 - 確認事項
-待機動画が設定されないと、メイン画面は動きませんので、 [standby_video_id](how_to_setup_stanby_video_id.md)の設定されているかを確認してください。
+待機動画が設定されないと、メイン画面は動きませんので、 [standby_video_id](./../../../how_to_setup_stanby_video_id.md)の設定されているかを確認してください。
 
 ## STEP 5 - 起動方法
 > ⚠ 必ず STEP 4まで完了した上で行ってください。
@@ -29,7 +29,7 @@
 3. アプリが立ち上げられたらユーザー画面と管理画面が開かれます。
 
 # キャラクターの削除方法
-1. 管理画面の [キャラー管理](http://localhost:3000/admin/characters)ページに移動しいてください。
+1. 管理画面の [キャラー管理](./how_to_setup_character_admin_page.md)ページに移動しいてください。
 2. `キャラクターの一覧`の`削除`ボタンをクリックしてください。  
 ![管理画面のキャラクター追加結果](../../../images/add_character/admin_character_added.png)
 
@@ -52,7 +52,7 @@
 
 # キャラクターの追加方法（pgAdmin）
 - 以下のコマンドをコピーし、`pgAdmin`でキャラクターを作成してください。`キャラクター名`の部分を追加したいキャラクター名に変更してください。
-> pgadminの使い方については「[SQLコマンドで操作方法](./how_to_install_pg.md#SQLコマンドで操作方法)」に従ってください。
+> pgadminの使い方については「[SQLコマンドで操作方法](./../../../how_to_install_pg.md#sqlコマンドで操作方法)」に従ってください。
   ```sql
   INSERT INTO characters(name, owner_id) VALUES('キャラクター名', (SELECT id FROM users WHERE is_admin=true)) RETURNING ID;
   ```
