@@ -4,7 +4,7 @@
 1. 管理画面の [キャラー管理](http://localhost:3000/admin/characters)ページに移動しいてください。
 2. キャラクター追加のインプットに新しいキャラクター名を入力し、`追加`を押してください。
 3. `キャラクターの一覧`に追加されたキャラクター情報（id、名前、削除、詳細）が表示されます。  
-![管理画面のキャラクター追加結果](./images/add_character/admin_character_added.png)
+![管理画面のキャラクター追加結果](../../../images/add_character/admin_character_added.png)
 
 ## STEP 2 - 設定ファイルの読み込み
 1. [キャラー管理](http://localhost:3000/admin/characters)ページの`キャラクターの一覧`からキャラクターの詳細ページに移動してください。
@@ -23,15 +23,15 @@
 ## STEP 5 - 起動方法
 > ⚠ 必ず STEP 4まで完了した上で行ってください。
 1. STEP4まで終わったら、C:\talk_withにある`stop`アイコンをクリックしてください。ブラウザ及びターミナル `⚠すべて` が自動に閉じられます。  
-![アプリ起動の方法](./images/add_character/stop_bat.jpg)
+![アプリ起動の方法](../../../images/add_character/stop_bat.jpg)
 2. 全部閉じられたら、C:\talk_withにある`start`アイコンをクリックしてください。  
-![アプリ起動の方法](./images/add_character/start_bat.jpg)
+![アプリ起動の方法](../../../images/add_character/start_bat.jpg)
 3. アプリが立ち上げられたらユーザー画面と管理画面が開かれます。
 
 # キャラクターの削除方法
 1. 管理画面の [キャラー管理](http://localhost:3000/admin/characters)ページに移動しいてください。
 2. `キャラクターの一覧`の`削除`ボタンをクリックしてください。  
-![管理画面のキャラクター追加結果](./images/add_character/admin_character_added.png)
+![管理画面のキャラクター追加結果](../../../images/add_character/admin_character_added.png)
 
 ## キャラクターと一緒に削除される情報
 > キャラクターを削除すると、キャラクターと連携している他の情報も一緒に削除されます。以下で詳細をご確認ください。  
@@ -56,7 +56,7 @@
   ```sql
   INSERT INTO characters(name, owner_id) VALUES('キャラクター名', (SELECT id FROM users WHERE is_admin=true)) RETURNING ID;
   ```
-- 実行したら、キャラクターのIDが以下のように返されます：![キャラクター追加の結果例](./images/add_character/add_character_result.png)
+- 実行したら、キャラクターのIDが以下のように返されます：![キャラクター追加の結果例](../../../images/add_character/add_character_result.png)
 
 
 # 設定ファイル構成について
