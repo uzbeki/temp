@@ -25,7 +25,7 @@
 # 流れ
 1. データベースの設定（conversation_video_id, conversation_count)
   * ex)　conversation_video_id = "A"   
-  * ex)　conversation_count = 2
+  * ex)　conversation_count = 2 (32767まで入力できます。)
 2. talk-withのアプリケーションの立ち上げ
 3. キャラクターの選択（対話スタート）
 4. ユーザーが言う（言葉：お腹が痛いです。）

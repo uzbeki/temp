@@ -43,12 +43,12 @@ CREATE TABLE IF NOT EXISTS summary_keyword (
 * user_id：usersテーブルのid
 * start_id：まとめモードに入るvideoテーブルのid
 * end_video_id：まとめモードを終了するvideosテーブルのid
-* high_score：このスコア以上のスコアだったらhigh_score_video_idを再生する
-* low_score：このスコア以下のスコアだったらlow_score_video_idを再生する
+* high_score：このスコア以上のスコアだったらhigh_score_video_idを再生する (32767まで入力できます。)
+* low_score：このスコア以下のスコアだったらlow_score_video_idを再生する (32767まで入力できます。)
 * other_score_video_id：high_scoreからlow_scoreの間のスコアで再生されるvideosテーブルのid
 
 ### summary_keywordテーブル
 * id：自動で挿入される
 * summary_id：summaryテーブルのid
 * keyword：(例) {痛い,痛む,痛く}
-* score：keywordに一致した場合に加算するスコア
+* score：keywordに一致した場合に加算するスコア (32767まで入力できます。)

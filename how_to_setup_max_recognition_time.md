@@ -25,7 +25,7 @@
 1. pgAdmin4 のアプリケーションを立ち上げます。
 2. pgadmin ブラウザで talk-with にある blocks テーブルを探して右クリックして View/Edit Data の AllRows をクリックします。  
    ( Servers - PostgreSQL - Databases - Talk-With - Schemas - public - Tables - blocks )
-3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。（記入したい欄をダブルクリックすると編集ができます）　　　　
+3. `max_recognition_time`の項目に設定したい数字を記入します。記入がし終わったらエンター押してください。記入したい欄をダブルクリックすると編集ができます。(32767まで入力できます。)　 　　　
    ![インストール画面2](./images/pg/functional_description_Img/max_recognition_time/max_recognition_time_insert_data.png)
 4. F6 ボタン又は画面上にあるボタン（下のイメージを参考）をクリックしたら保存できます。
    ![インストール画面2](<./images/pg/pgadmin/save_data(F6).png>)

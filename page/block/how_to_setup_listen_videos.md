@@ -19,4 +19,4 @@
 - `id`：自動で登録される。
 - `block_id`：`blocks`テーブルのトリガー動画の id。listen_video_id を複数登録する場合は、同じ block_id を用いる。
 - `listen_video_id`：`new_videos`テーブルの id。聞き動画の id
-- `play_order`：聞き動画を流す順番。
+- `play_order`：聞き動画を流す順番。(32767まで入力できます。)

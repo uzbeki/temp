@@ -6,7 +6,7 @@
 
 *  `silence_time_limit`　:　無言の時間（単位：１秒 = 1000）ex) 10秒 = 10000
 *  `silence_video_id`　:　無言の時間が経ったら再生させる無言の動画ID
-*  `silence_count`　:　無言を何度繰り返すかの回数
+*  `silence_count`　:　無言を何度繰り返すかの回数 (32767まで入力できます。)
 *  `silence_final_video_id`　:　無言の動画IDが設定したカウンターの分だけ再生し終わったら再生させる最後の動画ID  
 
 # 注意点

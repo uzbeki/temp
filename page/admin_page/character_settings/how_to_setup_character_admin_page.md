@@ -19,7 +19,8 @@
   * __[注意]__ スタート動画(start_video_id)の設定は別になっているので、こちらで設定してください。
 
   <キャラクター選定画面>  
-  ![キャラクター設定２](../../../images/add_character/character_settings/characterSettings.png)
+  ![キャラクター設定２](../../../images/add_character/character_settings/characterSettings.png)  
+  (silenc_count : 32767まで入力できます。)
 
   <動画の一覧（パップアップ）画面>
   ![キャラクター設定３](../../../images/add_character/character_settings/popup.png)

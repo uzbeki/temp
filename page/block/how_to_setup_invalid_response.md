@@ -4,7 +4,7 @@
 
 ### `blocks`テーブルの invalid_max_count と invalid_final_video_id について
 
-- `invalid_max_count`：`invalid_final_video_id`を関係ない話の何回目に流すかのカウント。
+- `invalid_max_count`：`invalid_final_video_id`を関係ない話の何回目に流すかのカウント。(32767まで入力できます。)
 - `invalid_final_video_id`：関係ない回答の最後に流す動画。
 
 ブロックの中に上記の内容がセットされていない場合、関係ない話を何回してもブロックから出ない。

@@ -1,5 +1,5 @@
 # spj_categoryとは
-`spj_category`とは、spjのカテゴリ番号です。spj_categoryは `block`ごとに設定ができです。
+`spj_category`とは、spjのカテゴリ番号です。spj_categoryは `block`ごとに設定ができです。(spj_categoryは32767まで入力できます。)
 
 # 流れ
 ### [動画ごとに設定した場合]
