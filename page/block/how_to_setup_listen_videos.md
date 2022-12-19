@@ -20,3 +20,22 @@
 - `block_id`：`blocks`テーブルのトリガー動画の id。listen_video_id を複数登録する場合は、同じ block_id を用いる。
 - `listen_video_id`：`new_videos`テーブルの id。聞き動画の id
 - `play_order`：聞き動画を流す順番。(32767まで入力できます。)
+
+# 追加設定
+listen_video_idをloop設定するためには、videoごとに設定が必要。  
+
+`new_videos`テーブに設定
+* `loop` : true（loopになる）/ false（loopにならない）
+* `loop_count` : loopする回数  
+
+## 例
+listen_videoを2回loopする場合  
+* loop : true  
+* loop_count : 2
+
+listen_videoを無限loopにする場合  
+* loop : true
+* loop_count : 0
+
+listen_videoをloopしない場合
+* loop : false
