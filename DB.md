@@ -152,89 +152,165 @@
 
 # summary_keyword テーブル
 
-| カラム     | 型       | 説明                                   | 機能対応済み |
-| ---------- | -------- | -------------------------------------- | ------------ |
-| id         | SERIAL   | 主キー                                 | ✔️         |
-| summary_id | SERIAL   | summary テーブルの id                  | ✔️         |
-| keyword    | TEXT[]   | (例){痛い,痛む,痛く,痛かった}          | ✔️         |
-| score      | SMALLINT | keyword に一致した場合に加算するスコア | ✔️         |
+| カラム        | 型       | 説明                          | 機能対応済み |
+|------------|----------|-------------------------------|-------------|
+| id         | SERIAL   | 主キー                          | ✔️          |
+| summary_id | SERIAL   | summary テーブルの id              | ✔️          |
+| keyword    | TEXT[]   | (例){痛い,痛む,痛く,痛かった}       | ✔️          |
+| score      | SMALLINT | keyword に一致した場合に加算するスコア | ✔️          |
 
 # kikiwasure テーブル
 
-| カラム                 | 型        | 説明                                                                   | 機能対応済み |
-| ---------------------- | --------- | ---------------------------------------------------------------------- | ------------ |
-| id                     | BIGSERIAL | 主キー                                                                 | ✔️         |
-| character_id           | SERIAL    | characters テーブルの id                                               | ✔️         |
-| start_video_id         | UUID      | スタート動画。videos テーブルの id                                     | ✔️         |
-| connecting_video_id    | UUID      | 再生していない動画が複数ある場合に、間に流す動画。videos テーブルの id | ✔️         |
-| kikiwasure_positive_id | UUID      | kikiwasure_check の check_played_id を全部再生していない場合に流す動画 | ✔️         |
-| kikiwasure_negative_id | UUID      | kikiwasure_check の check_played_id を全部再生していた場合に流す動画   | ✔️         |
+| カラム                    | 型        | 説明                                                          | 機能対応済み |
+|------------------------|-----------|---------------------------------------------------------------|-------------|
+| id                     | BIGSERIAL | 主キー                                                          | ✔️          |
+| character_id           | SERIAL    | characters テーブルの id                                           | ✔️          |
+| start_video_id         | UUID      | スタート動画。videos テーブルの id                                      | ✔️          |
+| connecting_video_id    | UUID      | 再生していない動画が複数ある場合に、間に流す動画。videos テーブルの id          | ✔️          |
+| kikiwasure_positive_id | UUID      | kikiwasure_check の check_played_id を全部再生していない場合に流す動画 | ✔️          |
+| kikiwasure_negative_id | UUID      | kikiwasure_check の check_played_id を全部再生していた場合に流す動画  | ✔️          |
 
 # kikiwasure_check テーブル
 
-| カラム          | 型        | 説明                                                                | 機能対応済み |
-| --------------- | --------- | ------------------------------------------------------------------- | ------------ |
-| id              | BIGSERIAL | 主キー                                                              | ✔️         |
-| kikiwasure_id   | BIGSERIAL | kikiwasure テーブルの id                                            | ✔️         |
-| check_played_id | UUID      | 再生していたか確認する動画。videos テーブルの id                    | ✔️         |
-| play_video_id   | UUID      | check_played_id で再生していない場合に再生する videos テーブルの id | ✔️         |
+| カラム             | 型        | 説明                                                  | 機能対応済み |
+|-----------------|-----------|-------------------------------------------------------|-------------|
+| id              | BIGSERIAL | 主キー                                                  | ✔️          |
+| kikiwasure_id   | BIGSERIAL | kikiwasure テーブルの id                                   | ✔️          |
+| check_played_id | UUID      | 再生していたか確認する動画。videos テーブルの id                   | ✔️          |
+| play_video_id   | UUID      | check_played_id で再生していない場合に再生する videos テーブルの id | ✔️          |
 
 # blocks テーブル
 
-| カラム                  | 説明                                                                | 機能対応済み |
-| ----------------------- | ------------------------------------------------------------------- | ------------ |
-| id                      | 主キー                                                              | ✔️         |
-| character_id            | どのキャラクターのブロックか                                        | ✔️         |
-| title                   | ブロックの説明文                                                    | ✔️         |
-| trigger_video_id        | ブロックの初めに流れる動画                                          | ✔️         |
-| invalid_max_count       | 関係ない話の回数。指定した番号を超えたらブロックから出る            | ✔️         |
-| invalid_final_video_id     | invalid_max_countが超えたら、飛ぶブロックのtrigger_video_id         | ✔️         |
-| force_next_video_id        | 話し始めたら、強制で飛ぶブロックのtrigger_video_id                  | ✔️         |
-| tag                     | 音声認識テキストに追加して送るテキスト                              | ✔️         |
-| play_again              | true:同じブロックに入る、false:同じブロックに入らない               | ✔️         |
-| play_final_video        | ブロックに入らない時に流す動画                                      | ✔️         |
-| max_recognition_time    | 音声認識テキストの自動確定時間                                      | ✔️         |
-| spj_category            | spjのカテゴリーID                                                   | ✔️         |
-| spj_empty_video_id      | spjからの回答が空白の場合に流す動画                                 | ✔️         |
-| ~~listen_video_number~~ | 聞く動画の何番目を流すかの番号。個別設定に変更で、廃止予定          | ✔️         |
-| chatbot_score_end       | スコアが低い時、ブロックを出るか（true）、聞く動画に戻るか（false） | ✔️         |
-| chatbot_score_end_video | スコアが低かったら飛ぶブロックのtrigger_video_id                    | ✔️         |
-| silence_time_limit      | 無言時間                                                            | ✔️         |
-| silence_count           | 無言回数カウント                                                    | ✔️         |
+| カラム                        | 説明                                             | 機能対応済み |
+|----------------------------|--------------------------------------------------|-------------|
+| id                         | 主キー                                             | ✔️          |
+| character_id               | どのキャラクターのブロックか                                   | ✔️          |
+| title                      | ブロックの説明文                                      | ✔️          |
+| trigger_video_id           | ブロックの初めに流れる動画                                | ✔️          |
+| invalid_max_count          | 関係ない話の回数。指定した番号を超えたらブロックから出る          | ✔️          |
+| invalid_final_video_id     | invalid_max_countが超えたら、飛ぶブロックのtrigger_video_id | ✔️          |
+| force_next_video_id        | 話し始めたら、強制で飛ぶブロックのtrigger_video_id           | ✔️          |
+| tag                        | 音声認識テキストに追加して送るテキスト                       | ✔️          |
+| play_again                 | true:同じブロックに入る、false:同じブロックに入らない             | ✔️          |
+| play_final_video           | ブロックに入らない時に流す動画                             | ✔️          |
+| max_recognition_time       | 音声認識テキストの自動確定時間                        | ✔️          |
+| spj_category               | spjのカテゴリーID                                      | ✔️          |
+| spj_empty_video_id         | spjからの回答が空白の場合に流す動画                     | ✔️          |
+| ~~listen_video_number~~    | 聞く動画の何番目を流すかの番号。個別設定に変更で、廃止予定 | ✔️          |
+| chatbot_score_end          | スコアが低い時、ブロックを出るか（true）、聞く動画に戻るか（false）    | ✔️          |
+| chatbot_score_end_video_id | スコアが低かったら飛ぶブロックのtrigger_video_id               | ✔️          |
+| silence_time_limit         | 無言時間                                         | ✔️          |
+| silence_count              | 無言回数カウント                                     | ✔️          |
+
+# block_chatbot_scores テーブル
+spjスコア。各ブロックで複数のスコア設定のため
+| カラム          | 説明                                  | 機能対応済み |
+|--------------|---------------------------------------|-------------|
+| id           | 主キー                                  | ✔️          |
+| block_id     | ブロックID。何のブロックのchatbot_scoreか         | ✔️          |
+| low_video_id | spj のスコアがチャットボットのスコアより低かった時に流す動画 | ✔️          |
+| score        | チャットボットのスコア                           | ✔️          |
+
+
+# block_invalid_responses テーブル（ランダム選択）
+関係ない話があった時に再生する動画と戻る聞く動画の番号を設定するテーブル
+| カラム                       | 説明                                                      | 機能対応済み |
+|---------------------------|----------------------------------------------------------|-------------|
+| id                        | 主キー                                                      | ✔️          |
+| block_id                  | ブロックID。何のブロックのchatbot_scoreか                             | ✔️          |
+| invalid_response_video_id | 関係ない話に対して再生する動画ID                                 | ✔️          |
+| listen_video_number       | （対応予定）invalid_response_video_id後に戻る聞く動画の順番番後 |             |
 
 
 # block_listen_videos テーブル
+ブロックの聞き待ち動画テーブル。各ブロックで複数の聞き待ち動画設定のため
+| カラム             | 説明                      | 機能対応済み |
+|-----------------|--------------------------|-------------|
+| id              | 主キー                      | ✔️          |
+| block_id        | ブロックID。どのブロックの聞き待ち動画か | ✔️          |
+| listen_video_id | 聞き待ち動画                | ✔️          |
+| play_order      | ブロックで流す聞き待ち動画の順番   | ✔️          |
 
-| カラム             | 説明                           |
-|-----------------|--------------------------------|
-| id              |                                |
-| block_id        | 聞き待ち動画を追加したい blocks の ID |
-| listen_video_id | 聞き待ち動画                     |
-| play_order      | ブロックで流す聞き待ち動画の順番        |
 
-# block_chatbot_scores テーブル
 
-| カラム          | 説明                                  |
-|--------------|---------------------------------------|
-| id           |                                       |
-| block_id     | 聞き待ち動画を追加したい blocks の ID        |
-| low_video_id | spj のスコアがチャットボットのスコアより低かった時に流す動画 |
-| score        | チャットボットのスコア                           |
+# block_nod_videos テーブル
+うなずき動画を設定するテーブル（ランダム選択）
+| カラム          | 説明     | 機能対応済み |
+|--------------|----------|-------------|
+| id           | 主キー     | ✔️          |
+| block_id     | ブロックID。  | ✔️          |
+| nod_video_id | うなずき動画 | ✔️          |
 
 # block_replacement_videos テーブル
+ブロックごとに設定できる動画ID・変換IDの機能のテーブル（ランダム選択）
+| カラム                | 説明                               | 機能対応済み |
+|--------------------|-----------------------------------|-------------|
+| id                 | 主キー                               | ✔️          |
+| block_id           | ブロックID。何のブロックのreplacement_videosか | ✔️          |
+| video_id           | SPJからの変換される動画                  | ✔️          |
+| converted_video_id | 変換動画                           | ✔️          |
 
-| カラム                | 説明                           |
-|--------------------|--------------------------------|
-| id                 |                                |
-| block_id           | 聞き待ち動画を追加したい blocks の ID |
-| video_id           | 変換前の動画                    |
-| converted_video_id | 変換後の動画                    |
+
+# block_silence_final_videos テーブル
+何回か無言になった後に、違うブロックに飛ぶ先を設定するテーブル（ランダム選択）
+| カラム                    | 説明                                 | 機能対応済み |
+|------------------------|--------------------------------------|-------------|
+| id                     | 主キー                                 | ✔️          |
+| block_id               | ブロックID。                              | ✔️          |
+| silence_final_video_id | 飛ぶ先の動画ID：blocks.trigger_video_id | ✔️          |
+
+
+# block_silence_videos テーブル
+無言時に再生する動画と次に飛ぶ聞く動画の順番番号（ランダム選択）
+| カラム                 | 説明                                                       | 機能対応済み |
+|---------------------|------------------------------------------------------------|-------------|
+| id                  | 主キー                                                       | ✔️          |
+| block_id            | ブロックID。                                                    | ✔️          |
+| silence_video_id    | 無言時に再生する動画                                          | ✔️          |
+| listen_video_number | silence_video_id後に戻る聞く動画の順番番号（対応予定、今は頭に戻る） |             |
+
+
+# block_skip_videos テーブル
+スキップする動画のテーブル（ランダム選択）
+| カラム           | 説明       | 機能対応済み |
+|---------------|------------|-------------|
+| id            | 主キー       | ✔️          |
+| block_id      | ブロックID。    | ✔️          |
+| skip_video_id | スキップ動画ID | ✔️          |
+
+
+# block_valid_responses テーブル
+関係ある動画を設定するテーブル
+| カラム                     | 説明                                                            | 機能対応済み |
+|-------------------------|-----------------------------------------------------------------|-------------|
+| id                      | 主キー                                                            | ✔️          |
+| block_id                | ブロックID。                                                         | ✔️          |
+| valid_response_video_id | trigger動画に対して期待する（関係ある）動画。次に飛ぶblockのtrigger_video_id | ✔️          |
+
+
+# block_words テーブル
+spjに送る前にチェックする単語のテーブル
+| カラム      | 説明                                 | 機能対応済み |
+|----------|--------------------------------------|-------------|
+| id       | 主キー                                 | ✔️          |
+| block_id | ブロックID。                              | ✔️          |
+| word     | 単語                                 | ✔️          |
+| video_id | wordが一致したら飛ぶブロックのtrigger_video_id | ✔️          |
+
+# block_word_parent_relationships テーブル
+block_wordsの単語の関係性を設定するテーブル
+| カラム       | 説明                      | 機能対応済み |
+|-----------|--------------------------|-------------|
+| id        | 主キー                      | ✔️          |
+| word_id   | 単語ID。block_wordsのid     | ✔️          |
+| parent_id | 単語の親のID。block_wordsのid | ✔️          |
+
 
 # character_start_buttons テーブル
-
-| カラム          | 説明                       |
-|--------------|----------------------------|
-| id           |                            |
-| character_id | スタート動画を設定したいキャラクターの ID |
-| video_id     | スタート動画                   |
-| block_id     | スタート動画後に入るブロックの ID     |
+キャラクターのスタートボタンデータを持つテーブル
+| カラム          | 説明                         | 機能対応済み |
+|--------------|-----------------------------|-------------|
+| id           | 主キー                         | ✔️          |
+| character_id | スタート動画を設定したいキャラクターの ID   | ✔️          |
+| video_id     | スタート動画（ブロックで存在する必要がある） | ✔️          |
+| block_id     | video_id後に入るブロックの ID       | ✔️          |
