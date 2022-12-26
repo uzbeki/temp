@@ -1,6 +1,16 @@
 # invalid_response_video
+ブロックに対する、関係ない回答をした際に、再生する動画を指定する。
 
-ブロックに対する、関係ない回答の動画を指定する。
+
+
+## 関係ない動画をどのように判断するか
+ブロックのvalid_responses（期待している回答）に設定されている回答以外の全てが`関係ない回答`として扱われます。そのため、ブロックのvalid_responses（期待している回答）に何も設定していなかった場合、`全て有効な回答`として扱われ、本機能は機能しませんので、ご注意ください。また、合わせて、block_invalid_responseテーブルのinvalid_response_video_idを設定しないと、関係ない回答時に何も再生できないため、機能しません。
+
+### 機能する条件
+1. block_valid_responsesテーブルに期待している回答を登録する
+2. block_invalid_responsesテーブルに関係ない回答時に再生する動画を登録する
+3. invalid_max_countを設定する（何回まで関係ない回答を許すか。）
+4. invalid_final_video_idを設定する（期待している回答でなかった回数がinvalid_max_countを超えた場合に、遷移するブロックのtrigger_video_idを入れる）
 
 ### `blocks`テーブルの invalid_max_count と invalid_final_video_id について
 
@@ -9,7 +19,7 @@
 
 ブロックの中に上記の内容がセットされていない場合、関係ない話を何回してもブロックから出ない。
 
-### カウントされる条件
+## 関係ない回答の回数はどのようにカウントされるか
 
 - spj からのスコアが chatbot_score より低かった場合
 - invalid_response 動画を再生した場合
