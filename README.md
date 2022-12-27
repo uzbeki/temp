@@ -50,7 +50,7 @@
 
 - [管理画面について](./page/admin_page/admin_page.md)
 - [管理画面：スタートブロック仕様・設定](./page/admin_page/character_settings/how_to_setup_character_start_buttons.md)
-- [管理画面：ブロック追加・修正・削除]
+- [管理画面：ブロック追加・修正・削除](./page/block/how_to_use_block_page.md)
 - [管理画面：キャラクター追加](./page/admin_page/character_settings/how_to_add_character.md)
 - [DB 構成](./DB.md)
 - [[ β-2 ] 無言の設定](./how_to_setup_silence_limit.md)
@@ -81,6 +81,7 @@
 - [invalid_response](./page/block/how_to_setup_invalid_response.md)
 
 - [spj_empty_video](./how_to_setup_spj_empty_video.md)
+
 # 自動再生許可の設定
 
 ブラウザはセキュリティー上で、動画の自動再生するにはユーザーが先に操作しないと再生しないです。自動再生がうまくいくためには、`talk with`が動いているドメインの許可を入れないといけないです。いかに従ってください。
