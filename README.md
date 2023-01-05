@@ -72,7 +72,7 @@
 - [聞き忘れモード](./how_to_setup_kikiwasure.md)
 - [強制再生](./how_to_setup_force_video.md)
 - [on-premise モード](./how_to_switch_on-premise_mode.md)
-- [クラウド版（開発用）](./cloud_dev.md)
+- [VOD版（開発用）](./cloud_dev.md)
 - [ブロック機能](./tutorial_block_function.md)
   <!-- - [fullscreen](./how_to_setup_fullscreen.md) -->
 - [valid_response](./page/block/how_to_setup_valid_response.md)
