@@ -57,7 +57,7 @@
 - [[ β-10 ] conversation_count の設定](./how_to_setup_conversation_count.md)
 - [[ β-29 ] pattern](./how_to_setup_pattern.md)
 - [自動認証機能](./LogDB_with_Authentication.md)
-- [replacement_list 動画 ID/変換 ID](./how_to_setup_alternative_list.md)
+- [replacement_list 動画 ID/変換 ID](./how_to_setup_replacement_list.md)
 - [google 音声認識](./About_GoogleSpeechToText.md)
 - [hide_cursor](./how_to_setup_hide_cursor.md)
 - [hit_words](./how_to_setup_hit_words.md)
