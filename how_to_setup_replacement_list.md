@@ -5,7 +5,7 @@
 ### `block_replacement_videos`のテーブル
 項目|内容
 -|-
-id | serial number  
+id | 主キー  
 block_id | blockのid  
 video_id | new_videosのid、変換したい動画のID  
 converted_video_id | new_videosのid、video_idの代わりに再生させる動画のID  
