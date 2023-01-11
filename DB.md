@@ -25,21 +25,21 @@
 | owner_id | UUID         | users テーブルの id。キャラクターのオーナー。 |
 
 # new_videos テーブル
-
-| カラム             | 型            | 説明                                                 | 機能するか |
-| ------------------ | ------------- | ---------------------------------------------------- | ---------- |
-| id                 | UUID          | 主キー。自動で生成される。                           | ✔️       |
-| character_id       | SERIAL        | characters テーブルの id                             | ✔️       |
-| path               | VARCAHAR(255) | 動画があるディレクトリのパス                         | ✔️       |
-| original_id        | INTEGER       | α 版で使っている動画 ID                              | ✔️       |
-| title              | VARCHAR(255)  | 拡張子無しの動画のファイル名                         | ✔️       |
-| play_end           | BOOLEAN       | 再生し終わったら、対話が終了するか                   | ✔️       |
-| loop               | BOOLEAN       | loopするかどうか                                     | ✔️       |
-| loop_count         | SMALLINT      | loopする場合、何回までするか                         | ✔️       |
-| mic_on             | BOOLEAN       | 動画再生中にマイクをオンにするか                     | ✔️       |
-| play_now           | BOOLEAN       | すぐに再生するか。ブロックであんまり使わなくなった。 |            |
-| mic_on_millisecond | SMALLINT      | マイクオンにするまでの時間(ミリ秒)                   | ✔️       |
-| comment            | VARCHAR(255)  | 分かりやすくするためのコメント                       | ✔️       |
+[🔗機能説明書へ](./table_new_videos.md)
+| カラム                                     | 型            | 説明                                                 | 機能するか |
+| ------------------------------------------ | ------------- | ---------------------------------------------------- | ---------- |
+| id                                         | UUID          | 主キー。自動で生成される。                           | ✔️       |
+| character_id                               | SERIAL        | characters テーブルの id                             | ✔️       |
+| path                                       | VARCAHAR(255) | 動画があるディレクトリのパス                         | ✔️       |
+| original_id                                | INTEGER       | α 版で使っている動画 ID                              | ✔️       |
+| title                                      | VARCHAR(255)  | 拡張子無しの動画のファイル名                         | ✔️       |
+| play_end                                   | BOOLEAN       | 再生し終わったら、対話が終了するか                   | ✔️       |
+| loop                                       | BOOLEAN       | loopするかどうか                                     | ✔️       |
+| loop_count                                 | SMALLINT      | loopする場合、何回までするか                         | ✔️       |
+| mic_on                                     | BOOLEAN       | 動画再生中にマイクをオンにするか                     | ✔️       |
+| [play_now](./table_new_videos.md#play_now) | BOOLEAN       | すぐに再生するか。ブロックであんまり使わなくなった。 | ✔️       |
+| mic_on_millisecond                         | SMALLINT      | マイクオンにするまでの時間(ミリ秒)                   | ✔️       |
+| comment                                    | VARCHAR(255)  | 分かりやすくするためのコメント                       | ✔️       |
 
 # character_setting テーブル
 
@@ -82,15 +82,6 @@
 | count                | SMALLSERIAL | 対話成立のカウンターする数。ブロック追加後動作確認がまだ                 |              |
 | play_video_id        | UUID        | 対話成立のカウンターが終わった場合流す動画。ブロック追加後動作確認がまだ |              |
 
-# chatbot_scores テーブル
-> ⚠️削除予定
-
-| カラム       | 型       | 説明                                               |
-| ------------ | -------- | -------------------------------------------------- |
-| id           | SERIAL   | 主キー                                             |
-| video_id     | UUID     | videos テーブルの id。どの動画の score か。        |
-| score        | FLOAT(2) | 0~1。                                              |
-| low_video_id | UUID     | videos テーブルの id。score より低い場合に流す動画 |
 
 # slots テーブル
 （パターン）過去に再生した「A、B、C」動画があれば、Dを再生する機能用のテーブルです。
